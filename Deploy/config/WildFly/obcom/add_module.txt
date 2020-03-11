@@ -1,0 +1,35 @@
+#-------------------------------------------------------------------------------
+# Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+#
+# All  rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+# used under the terms of its associated license document.  You  may  NOT  copy,
+# modify,  sublicense,  or  distribute this source file or portions of it unless
+# previously authorized in writing by OBCOM INGENIERIA S.A. In any  event,  this
+# notice and above copyright must always be included verbatim with this file.
+#-------------------------------------------------------------------------------
+# https://docs.jboss.org/author/display/WFLY10/Documentation
+#-------------------------------------------------------------------------------
+
+# Define batch commands (all-or-nothing)
+batch
+
+# Add OBCOM Security Filter Module:
+module add \
+--name=obcom.web.security \
+--slot=main --resource-delimiter=; \
+--resources=obcom-web-security.jar \
+--dependencies=javax.api,javax.servlet.api
+
+# Make OBCOM Security Filter Module GLOBAL:
+#
+# Global modules is a set of JBoss Modules that will be added as dependencies to
+# the JBoss Module of every Java EE deployment. Such dependencies allows Java EE
+# deployments to see the classes exported by the global modules.
+#
+#/subsystem=ee:list-remove(name="global-modules",value={name="obcom.web.security",slot="main"})
+/subsystem=ee:list-add(name="global-modules",value={name="obcom.web.security",slot="main"})
+
+# Execute batch commands
+run-batch
+
+#-------------------------------------------------------------------------------

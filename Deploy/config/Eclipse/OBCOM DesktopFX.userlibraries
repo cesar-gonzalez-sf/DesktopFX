@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eclipse-userlibraries version="2">
+    <library name="JEE Transaction" systemlibrary="false">
+        <archive path="/Deploy/xlibs/jtran/javax.transaction-api-1.3.jar" source="/Deploy/xlibs/jtran/javax.transaction-api-1.3-sources.jar"/>
+    </library>
+    <library name="OBCOM DesktopFX" systemlibrary="false">
+        <archive path="/Deploy/olibs/obcom-desktopfx-jws.jar"/>
+        <archive javadoc="jar:platform:/resource/Deploy/javadoc/obcom-desktopfx-app-javadoc.jar!/" nativelibpaths="Deploy/jnilib/win-amd64" path="/Deploy/olibs/obcom-desktopfx-app.jar"/>
+        <archive path="/Deploy/libs/imperial-desktopfx-ext.jar"/>
+        <archive path="/Deploy/olibs/obcom-fst.jar"/>
+        <archive path="/Deploy/olibs/obcom-fst-jackson.jar"/>
+        <archive path="/Deploy/olibs/obcom-fst-javassist.jar"/>
+        <archive path="/Deploy/olibs/obcom-fst-objenesis.jar"/>
+        <archive path="/Deploy/olibs/obcom-websocket-lib.jar"/>
+        <archive path="/Deploy/xlibs/jnlp.jar"/>
+    </library>
+    <library name="OBCOM Plugins" systemlibrary="false">
+        <archive path="/Deploy/olibs/obcom-imclient-app.jar"/>
+        <archive path="/Deploy/olibs/obcom-mcastadmin-app.jar"/>
+        <archive path="/Deploy/olibs/obcom-mcastnews-app.jar"/>
+        <archive path="/Deploy/olibs/obcom-netsecurity-app.jar"/>
+        <archive path="/Deploy/olibs/obcom-websecurity-app.jar"/>
+    </library>
+</eclipse-userlibraries>

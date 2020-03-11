@@ -1,0 +1,82 @@
+<!--
+ * Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+ *
+ * All rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+ * used  under  the  terms of its associated license document. You may NOT copy,
+ * modify, sublicense, or distribute this source file or portions of  it  unless
+ * previously  authorized in writing by OBCOM INGENIERIA S.A. In any event, this
+ * notice and above copyright must always be included verbatim with this file.
+-->
+<project name="war-build" basedir=".">
+    <!-- Import common ant definitions -->
+    <import file="build-def.xml"/>
+
+    <!-- Default war specification version -->
+    <property name="war.version" value="1.1"/>
+
+    <!-- Directory that contains the web java sources -->
+    <property name="src.dir" location="../src"/>
+
+    <!-- Directory that containts the web site files -->
+    <property name="web.dir" location="../WebContent"/>
+
+    <!-- Directory that contains the web library files -->
+    <property name="lib.dir" location="${web.dir}/WEB-INF/lib"/>
+
+    <!-- Directory that contains the web class files -->
+    <property name="classes.dir" location="${web.dir}/WEB-INF/classes"/>
+
+    <!-- Location of the web site manifest file -->
+    <property name="meta.file" location="${web.dir}/META-INF/MANIFEST.MF"/>
+
+    <!-- Directory that containts the web jnlp files -->
+    <property name="jnlp.dir" location="${web.dir}/jnlp"/>
+
+    <!-- Location of the application war file -->
+    <property name="war.file" location="${ant.project.name}.war"/>
+
+	<!-- Application classpath -->
+    <path id="class.path"/>
+
+    <!-- Builds the war depends -->
+    <target name="war-depends"/>
+
+    <!-- Sign all modified JAR files in JNLP directory (if enabled) -->
+    <target name="war-signjar" depends="war-depends" if="${use.jarsigner}">
+        <signjar storetype="${sign.storetype}"
+            digestalg="${sign.digestalg}" lazy="true" strict="true"
+            sigfile="${sign.sigfile}" tsaurl="${sign.tsaurl}"
+            keystore="${sign.keystore}" alias="${sign.alias}"
+            storepass="${sign.storepass}" keypass="${sign.keypass}">
+        	<path><fileset dir="${jnlp.dir}" includes="*.jar" excludes="obcom*"/></path>
+            <sysproperty key="jsse.enableSNIExtension" value="true"/>
+        </signjar>
+	</target>
+
+	<!-- Builds the application war file -->
+    <target name="war-build" depends="war-signjar">
+        <tstamp>
+            <format property="version" pattern="${version.pattern}"/>
+            <format property="build.datetime" pattern="${build.datetime.pattern}"/>
+        </tstamp>
+        <replaceregexp file="${meta.file}" match="Ant-Version:.*\n" flags="g" replace=""/>
+        <replaceregexp file="${meta.file}" match="Created-By:.*\n" flags="g" replace=""/>
+        <replaceregexp file="${meta.file}" match="Package-Version:.*" flags="g"
+            replace="Package-Version: ${jar.version}.${version}"/>
+        <manifest file="${meta.file}" mode="update">
+            <attribute name="Build-DateTime" value="${build.datetime}"/>
+            <attribute name="Specification-Version" value="${war.version}"/>
+            <attribute name="Implementation-Version" value="${war.version}.${version}"/>
+        </manifest>
+        <echo message="war file version = ${war.version}.${version}"/>
+        <war destfile="${war.file}" compress="true"
+            basedir="${web.dir}" manifest="${meta.file}">
+            <classes dir="${classes.dir}"/>
+        </war>
+    </target>
+
+    <!-- Deploys the application war file -->
+    <target name="war-deploy-all" depends="war-build">
+        <move file="${war.file}" todir="${deploy.deploy}"/>
+    </target>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) IMPERIAL S.A. All rights reserved.
+ *
+ * All  rights  to  this product are owned by IMPERIAL S.A. and may only be used
+ * under the terms of its associated license document. You may NOT copy, modify,
+ * sublicense,  or  distribute  this  source  file  or  portions  of  it  unless
+ * previously  authorized  in writing by IMPERIAL S.A. In any event, this notice
+ * and above copyright must always be included verbatim with this file.
+-->
+<!DOCTYPE jboss-web PUBLIC
+    "-//JBoss//DTD Web Application 5.0//EN"
+    "http://www.jboss.org/j2ee/dtd/jboss-web_5_0.dtd">
+<jboss-web>
+  <!-- ===================================================================== -->
+  <!-- == Context Root ===================================================== -->
+  <!-- ===================================================================== -->
+
+  <context-root>cajaunificada</context-root>
+
+  <!-- ===================================================================== -->
+  <!-- == Resources ======================================================== -->
+  <!-- ===================================================================== -->
+
+  <resource-ref>
+    <res-ref-name>CajaUnificadaDataSource</res-ref-name>
+    <jndi-name>java:/jdbc/ImpDesktopFxDataSource</jndi-name>
+  </resource-ref>
+</jboss-web>

@@ -1,0 +1,91 @@
+cl.imperial.autorizadorventa.Main
+cl.imperial.autorizadorventa.Main: Main(cl.obcom.desktopfx.core.DesktopTask)
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWeb
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWeb: cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult buscaclienterutBca(java.lang.String,java.lang.String,java.lang.String)
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebException
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebException: cl.imperial.autorizadorventa.ws.WebFaultInfo faultInfo
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebException: AutorizadorVentaWebException(java.lang.String,cl.imperial.autorizadorventa.ws.WebFaultInfo)
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebException: AutorizadorVentaWebException(java.lang.String,cl.imperial.autorizadorventa.ws.WebFaultInfo,java.lang.Throwable)
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebException: cl.imperial.autorizadorventa.ws.WebFaultInfo getFaultInfo()
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService: AutorizadorVentaWebService()
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService: AutorizadorVentaWebService(javax.xml.ws.WebServiceFeature[])
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService: AutorizadorVentaWebService(java.net.URL)
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService: AutorizadorVentaWebService(java.net.URL,javax.xml.ws.WebServiceFeature[])
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService: AutorizadorVentaWebService(java.net.URL,javax.xml.namespace.QName)
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService: AutorizadorVentaWebService(java.net.URL,javax.xml.namespace.QName,javax.xml.ws.WebServiceFeature[])
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService: cl.imperial.autorizadorventa.ws.AutorizadorVentaWeb getAutorizadorVentaWebPort()
+cl.imperial.autorizadorventa.ws.AutorizadorVentaWebService: cl.imperial.autorizadorventa.ws.AutorizadorVentaWeb getAutorizadorVentaWebPort(javax.xml.ws.WebServiceFeature[])
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: java.lang.String rutCliente
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: java.lang.String codEntidad
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: java.lang.String codSucursal
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: BuscaclienterutBca()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: java.lang.String getRutCliente()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: void setRutCliente(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: java.lang.String getCodEntidad()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: void setCodEntidad(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: java.lang.String getCodSucursal()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBca: void setCodSucursal(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String cliente
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String codEntidad
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String codSucursal
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String dvCliente
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String estado
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String rutCliente
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String valido
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: BuscaclienterutBcaCliente()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String getCliente()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: void setCliente(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String getCodEntidad()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: void setCodEntidad(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String getCodSucursal()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: void setCodSucursal(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String getDvCliente()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: void setDvCliente(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String getEstado()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: void setEstado(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String getRutCliente()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: void setRutCliente(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: java.lang.String getValido()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente: void setValido(java.lang.String)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResponse
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResponse: cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult buscaclienterutBcaResult
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResponse: BuscaclienterutBcaResponse()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResponse: cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult getBuscaclienterutBcaResult()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResponse: void setBuscaclienterutBcaResult(cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult)
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult: java.util.List clientes
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult: java.lang.String errorMessage
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult: BuscaclienterutBcaResult()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult: java.util.List getClientes()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult: java.lang.String getErrorMessage()
+cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.autorizadorventa.ws.ObjectFactory
+cl.imperial.autorizadorventa.ws.ObjectFactory: ObjectFactory()
+cl.imperial.autorizadorventa.ws.ObjectFactory: cl.imperial.autorizadorventa.ws.BuscaclienterutBca createBuscaclienterutBca()
+cl.imperial.autorizadorventa.ws.ObjectFactory: cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente createBuscaclienterutBcaCliente()
+cl.imperial.autorizadorventa.ws.ObjectFactory: cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResponse createBuscaclienterutBcaResponse()
+cl.imperial.autorizadorventa.ws.ObjectFactory: cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult createBuscaclienterutBcaResult()
+cl.imperial.autorizadorventa.ws.ObjectFactory: cl.imperial.autorizadorventa.ws.WebFaultInfo createWebFaultInfo()
+cl.imperial.autorizadorventa.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaclienterutBca(cl.imperial.autorizadorventa.ws.BuscaclienterutBca)
+cl.imperial.autorizadorventa.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaclienterutBcaCliente(cl.imperial.autorizadorventa.ws.BuscaclienterutBcaCliente)
+cl.imperial.autorizadorventa.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaclienterutBcaResponse(cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResponse)
+cl.imperial.autorizadorventa.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaclienterutBcaResult(cl.imperial.autorizadorventa.ws.BuscaclienterutBcaResult)
+cl.imperial.autorizadorventa.ws.ObjectFactory: javax.xml.bind.JAXBElement createFaultinfo(cl.imperial.autorizadorventa.ws.WebFaultInfo)
+cl.imperial.autorizadorventa.ws.ObjectFactory: javax.xml.bind.JAXBElement createWebFaultInfo(cl.imperial.autorizadorventa.ws.WebFaultInfo)
+cl.imperial.autorizadorventa.ws.ProcedureResult
+cl.imperial.autorizadorventa.ws.ProcedureResult: ProcedureResult()
+cl.imperial.autorizadorventa.ws.WebFaultInfo
+cl.imperial.autorizadorventa.ws.WebFaultInfo: java.lang.Integer errorCode
+cl.imperial.autorizadorventa.ws.WebFaultInfo: java.lang.String sqlState
+cl.imperial.autorizadorventa.ws.WebFaultInfo: java.lang.String subject
+cl.imperial.autorizadorventa.ws.WebFaultInfo: WebFaultInfo()
+cl.imperial.autorizadorventa.ws.WebFaultInfo: java.lang.Integer getErrorCode()
+cl.imperial.autorizadorventa.ws.WebFaultInfo: void setErrorCode(java.lang.Integer)
+cl.imperial.autorizadorventa.ws.WebFaultInfo: java.lang.String getSqlState()
+cl.imperial.autorizadorventa.ws.WebFaultInfo: void setSqlState(java.lang.String)
+cl.imperial.autorizadorventa.ws.WebFaultInfo: java.lang.String getSubject()
+cl.imperial.autorizadorventa.ws.WebFaultInfo: void setSubject(java.lang.String)
+cl.imperial.autorizadorventa.ws.package-info

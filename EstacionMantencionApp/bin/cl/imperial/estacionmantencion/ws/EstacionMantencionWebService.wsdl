@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?><definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.estacionmantencion.imperial.cl/estacionmantencion" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://ws.estacionmantencion.imperial.cl/estacionmantencion" name="EstacionMantencionWebService">
+<types>
+<xsd:schema>
+<xsd:import namespace="http://ws.estacionmantencion.imperial.cl/estacionmantencion" schemaLocation="EstacionMantencionWebService.xsd"/>
+</xsd:schema>
+</types>
+<message name="buscaempBca">
+<part name="parameters" element="tns:buscaempBca"/>
+</message>
+<message name="buscaempBcaResponse">
+<part name="parameters" element="tns:buscaempBcaResponse"/>
+</message>
+<message name="EstacionMantencionWebException">
+<part name="fault" element="tns:faultinfo"/>
+</message>
+<message name="buscausuBca">
+<part name="parameters" element="tns:buscausuBca"/>
+</message>
+<message name="buscausuBcaResponse">
+<part name="parameters" element="tns:buscausuBcaResponse"/>
+</message>
+<message name="buscaestBca">
+<part name="parameters" element="tns:buscaestBca"/>
+</message>
+<message name="buscaestBcaResponse">
+<part name="parameters" element="tns:buscaestBcaResponse"/>
+</message>
+<message name="eliminaestEli">
+<part name="parameters" element="tns:eliminaestEli"/>
+</message>
+<message name="eliminaestEliResponse">
+<part name="parameters" element="tns:eliminaestEliResponse"/>
+</message>
+<message name="ingresaestIns">
+<part name="parameters" element="tns:ingresaestIns"/>
+</message>
+<message name="ingresaestInsResponse">
+<part name="parameters" element="tns:ingresaestInsResponse"/>
+</message>
+<portType name="EstacionMantencionWeb">
+<operation name="buscaempBca">
+<input wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscaempBcaRequest" message="tns:buscaempBca"/>
+<output wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscaempBcaResponse" message="tns:buscaempBcaResponse"/>
+<fault message="tns:EstacionMantencionWebException" name="EstacionMantencionWebException" wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscaempBca/Fault/EstacionMantencionWebException"/>
+</operation>
+<operation name="buscausuBca">
+<input wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscausuBcaRequest" message="tns:buscausuBca"/>
+<output wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscausuBcaResponse" message="tns:buscausuBcaResponse"/>
+<fault message="tns:EstacionMantencionWebException" name="EstacionMantencionWebException" wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscausuBca/Fault/EstacionMantencionWebException"/>
+</operation>
+<operation name="buscaestBca">
+<input wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscaestBcaRequest" message="tns:buscaestBca"/>
+<output wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscaestBcaResponse" message="tns:buscaestBcaResponse"/>
+<fault message="tns:EstacionMantencionWebException" name="EstacionMantencionWebException" wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/buscaestBca/Fault/EstacionMantencionWebException"/>
+</operation>
+<operation name="eliminaestEli">
+<input wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/eliminaestEliRequest" message="tns:eliminaestEli"/>
+<output wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/eliminaestEliResponse" message="tns:eliminaestEliResponse"/>
+<fault message="tns:EstacionMantencionWebException" name="EstacionMantencionWebException" wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/eliminaestEli/Fault/EstacionMantencionWebException"/>
+</operation>
+<operation name="ingresaestIns">
+<input wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/ingresaestInsRequest" message="tns:ingresaestIns"/>
+<output wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/ingresaestInsResponse" message="tns:ingresaestInsResponse"/>
+<fault message="tns:EstacionMantencionWebException" name="EstacionMantencionWebException" wsam:Action="http://ws.estacionmantencion.imperial.cl/estacionmantencion/EstacionMantencionWeb/ingresaestIns/Fault/EstacionMantencionWebException"/>
+</operation>
+</portType>
+<binding name="EstacionMantencionWebPortBinding" type="tns:EstacionMantencionWeb">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="buscaempBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="EstacionMantencionWebException">
+<soap:fault name="EstacionMantencionWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="buscausuBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="EstacionMantencionWebException">
+<soap:fault name="EstacionMantencionWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="buscaestBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="EstacionMantencionWebException">
+<soap:fault name="EstacionMantencionWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="eliminaestEli">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="EstacionMantencionWebException">
+<soap:fault name="EstacionMantencionWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="ingresaestIns">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="EstacionMantencionWebException">
+<soap:fault name="EstacionMantencionWebException" use="literal"/>
+</fault>
+</operation>
+</binding>
+<service name="EstacionMantencionWebService">
+<port name="EstacionMantencionWebPort" binding="tns:EstacionMantencionWebPortBinding">
+<soap:address location="http://localhost:8080/estacionmantencion/EstacionMantencionWebService"/>
+</port>
+</service>
+</definitions>

@@ -1,0 +1,33 @@
+#-------------------------------------------------------------------------------
+# Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+# 
+# All  rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+# used under the terms of its associated license document.  You  may  NOT  copy,
+# modify,  sublicense,  or  distribute this source file or portions of it unless
+# previously authorized in writing by OBCOM INGENIERIA S.A. In any  event,  this
+# notice and above copyright must always be included verbatim with this file.
+#-------------------------------------------------------------------------------
+# https://docs.jboss.org/author/display/WFLY10/Documentation
+#-------------------------------------------------------------------------------
+
+# Define batch commands (all-or-nothing)
+batch
+
+# Copy SQLServer JDBC Driver Module:
+module add \
+--name=sqlserver.jdbc \
+--slot=main --resource-delimiter=; \
+--resources=mssql-jdbc-8.2.0.jre8.jar \
+--dependencies=javax.api,javax.transaction.api,javax.xml.bind.api
+
+# Define SQLServer JDBC Driver DataSource:
+/subsystem=datasources/jdbc-driver=sqlserver:add( \
+    driver-name="sqlserver", \
+    driver-module-name="sqlserver.jdbc", \
+    driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver \
+)
+
+# Execute batch commands
+run-batch
+
+#-------------------------------------------------------------------------------

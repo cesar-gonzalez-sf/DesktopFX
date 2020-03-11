@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+C:\Java\Workspace1.116\DesktopFX\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\968016532.index
+\SampleWebWeb\src
+C:\Obcom\Clients\Imperial\DesktopFX\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1785717486.index
+\DesktopWeb\src
+C:\Java\Workspace1.116\DesktopFX\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1998936332.index
+\SampleChartWeb\src
+C:\Obcom\Clients\Imperial\DesktopFX\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1998936332.index
+\SampleChartWeb\src
+C:\Java\Workspace1.116\DesktopFX\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1785717486.index
+\DesktopWeb\src
+C:\Obcom\Clients\Imperial\DesktopFX\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4072261252.index
+\DesktopWeb\src
+C:\Obcom\Clients\Imperial\DesktopFX\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\968016532.index
+\SampleWebWeb\src

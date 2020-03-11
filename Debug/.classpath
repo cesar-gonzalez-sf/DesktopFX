@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OBCOM DesktopFX"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OBCOM Plugins"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EstacionMantencionApp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SencilloSolicitudApp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CajaUnificadaApp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AutorizadorVentaApp"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

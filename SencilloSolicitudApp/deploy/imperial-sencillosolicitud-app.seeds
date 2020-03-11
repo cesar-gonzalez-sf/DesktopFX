@@ -1,0 +1,646 @@
+cl.imperial.sencillosolicitud.CambiosList
+cl.imperial.sencillosolicitud.CambiosList: CambiosList()
+cl.imperial.sencillosolicitud.CambiosList: javafx.beans.property.StringProperty codigoProperty()
+cl.imperial.sencillosolicitud.CambiosList: java.lang.String getcodigo()
+cl.imperial.sencillosolicitud.CambiosList: void setcodigo(java.lang.String)
+cl.imperial.sencillosolicitud.CambiosList: javafx.beans.property.StringProperty glosaProperty()
+cl.imperial.sencillosolicitud.CambiosList: java.lang.String getglosa()
+cl.imperial.sencillosolicitud.CambiosList: void setglosa(java.lang.String)
+cl.imperial.sencillosolicitud.CambiosList: javafx.beans.property.StringProperty valorProperty()
+cl.imperial.sencillosolicitud.CambiosList: java.lang.String getvalor()
+cl.imperial.sencillosolicitud.CambiosList: void setvalor(java.lang.String)
+cl.imperial.sencillosolicitud.CambiosList: javafx.beans.property.StringProperty cantidadProperty()
+cl.imperial.sencillosolicitud.CambiosList: java.lang.String getcantidad()
+cl.imperial.sencillosolicitud.CambiosList: void setcantidad(java.lang.String)
+cl.imperial.sencillosolicitud.CambiosList: javafx.beans.property.StringProperty valorTProperty()
+cl.imperial.sencillosolicitud.CambiosList: java.lang.String getvalorT()
+cl.imperial.sencillosolicitud.CambiosList: void setvalorT(java.lang.String)
+cl.imperial.sencillosolicitud.Main
+cl.imperial.sencillosolicitud.Main: javafx.collections.ObservableList SencilloList
+cl.imperial.sencillosolicitud.Main: javafx.collections.ObservableList CambiosList
+cl.imperial.sencillosolicitud.Main: java.lang.String cTEnvioSencillo
+cl.imperial.sencillosolicitud.Main: java.lang.String dTEnvioSencillo
+cl.imperial.sencillosolicitud.Main: java.lang.String cTEnvioAvanceCMR
+cl.imperial.sencillosolicitud.Main: java.lang.String dTEnvioAvanceCMR
+cl.imperial.sencillosolicitud.Main: java.lang.String hostnameOri
+cl.imperial.sencillosolicitud.Main: java.lang.String pUsuNom
+cl.imperial.sencillosolicitud.Main: java.lang.String cod_emp
+cl.imperial.sencillosolicitud.Main: java.lang.String NombreTeso
+cl.imperial.sencillosolicitud.Main: Main(cl.obcom.desktopfx.core.DesktopTask)
+cl.imperial.sencillosolicitud.SencilloList
+cl.imperial.sencillosolicitud.SencilloList: SencilloList()
+cl.imperial.sencillosolicitud.SencilloList: javafx.beans.property.StringProperty codigoProperty()
+cl.imperial.sencillosolicitud.SencilloList: java.lang.String getcodigo()
+cl.imperial.sencillosolicitud.SencilloList: void setcodigo(java.lang.String)
+cl.imperial.sencillosolicitud.SencilloList: javafx.beans.property.StringProperty glosaProperty()
+cl.imperial.sencillosolicitud.SencilloList: java.lang.String getglosa()
+cl.imperial.sencillosolicitud.SencilloList: void setglosa(java.lang.String)
+cl.imperial.sencillosolicitud.SencilloList: javafx.beans.property.StringProperty valorProperty()
+cl.imperial.sencillosolicitud.SencilloList: java.lang.String getvalor()
+cl.imperial.sencillosolicitud.SencilloList: void setvalor(java.lang.String)
+cl.imperial.sencillosolicitud.SencilloList: javafx.beans.property.StringProperty cantidadProperty()
+cl.imperial.sencillosolicitud.SencilloList: java.lang.String getcantidad()
+cl.imperial.sencillosolicitud.SencilloList: void setcantidad(java.lang.String)
+cl.imperial.sencillosolicitud.SencilloList: javafx.beans.property.StringProperty valorTProperty()
+cl.imperial.sencillosolicitud.SencilloList: java.lang.String getvalorT()
+cl.imperial.sencillosolicitud.SencilloList: void setvalorT(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBca
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBca: java.lang.String codEmp
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBca: java.lang.String cajero
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBca: BuscabanusutieBca()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBca: java.lang.String getCodEmp()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBca: void setCodEmp(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBca: java.lang.String getCajero()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBca: void setCajero(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String descripcion
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String desestado
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String estado
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String idBandejapos
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String identificador
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: BuscabanusutieBcaBandeja()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String getDescripcion()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: void setDescripcion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String getDesestado()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: void setDesestado(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String getEstado()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: void setEstado(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String getIdBandejapos()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: void setIdBandejapos(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: java.lang.String getIdentificador()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja: void setIdentificador(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResponse
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResponse: cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult buscabanusutieBcaResult
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResponse: BuscabanusutieBcaResponse()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResponse: cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult getBuscabanusutieBcaResult()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResponse: void setBuscabanusutieBcaResult(cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult)
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult: java.util.List bandejas
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult: java.lang.String errorMessage
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult: BuscabanusutieBcaResult()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult: java.util.List getBandejas()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult: java.lang.String getErrorMessage()
+cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBca
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBca: java.lang.String estacion
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBca: BuscaempresaxestacionBca()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBca: java.lang.String getEstacion()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBca: void setEstacion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResponse
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResponse: cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult buscaempresaxestacionBcaResult
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResponse: BuscaempresaxestacionBcaResponse()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResponse: cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult getBuscaempresaxestacionBcaResult()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResponse: void setBuscaempresaxestacionBcaResult(cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult: java.lang.String errorMessage
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult: java.util.List solicitudes
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult: BuscaempresaxestacionBcaResult()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult: java.lang.String getErrorMessage()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult: java.util.List getSolicitudes()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String ajustesencillo
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String bodega
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String codEmp
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String codRegion
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String descripcion
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String estacion
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String listaventa
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String nomEmp
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String razonsocialSii
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String tipoestacion
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String tipofacEcodespacho
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String tipofacEcoretiro
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: BuscaempresaxestacionBcaSolicitud()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getAjustesencillo()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setAjustesencillo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getBodega()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setBodega(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getCodEmp()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setCodEmp(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getCodRegion()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setCodRegion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getDescripcion()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setDescripcion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getEstacion()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setEstacion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getListaventa()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setListaventa(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getNomEmp()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setNomEmp(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getRazonsocialSii()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setRazonsocialSii(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getTipoestacion()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setTipoestacion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getTipofacEcodespacho()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setTipofacEcodespacho(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: java.lang.String getTipofacEcoretiro()
+cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud: void setTipofacEcoretiro(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: java.lang.String tipoTran
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: java.lang.String codEmp
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: java.lang.String usuario
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: BuscaultimovoucherBca()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: java.lang.String getTipoTran()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: void setTipoTran(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: java.lang.String getCodEmp()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: void setCodEmp(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: java.lang.String getUsuario()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca: void setUsuario(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResponse
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResponse: cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult buscaultimovoucherBcaResult
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResponse: BuscaultimovoucherBcaResponse()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResponse: cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult getBuscaultimovoucherBcaResult()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResponse: void setBuscaultimovoucherBcaResult(cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult: java.lang.String errorMessage
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult: java.util.List vouchers
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult: BuscaultimovoucherBcaResult()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult: java.lang.String getErrorMessage()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult: java.util.List getVouchers()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String cierre
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String codEmp
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String codUsurecibe
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String estacion
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String estado
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String fecha
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String montoDocumentos
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String montoEfectivo
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String nroInterno
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String nroInternopadre
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String tipoTransaccion
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String usuario
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: BuscaultimovoucherBcaVoucher()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getCierre()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setCierre(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getCodEmp()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setCodEmp(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getCodUsurecibe()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setCodUsurecibe(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getEstacion()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setEstacion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getEstado()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setEstado(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getFecha()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setFecha(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getMontoDocumentos()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setMontoDocumentos(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getMontoEfectivo()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setMontoEfectivo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getNroInterno()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setNroInterno(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getNroInternopadre()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setNroInternopadre(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getTipoTransaccion()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setTipoTransaccion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: java.lang.String getUsuario()
+cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher: void setUsuario(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca: java.lang.String valor
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca: java.lang.String parametro
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca: BuscausuariosvaBca()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca: java.lang.String getValor()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca: void setValor(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca: java.lang.String getParametro()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca: void setParametro(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResponse
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResponse: cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult buscausuariosvaBcaResult
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResponse: BuscausuariosvaBcaResponse()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResponse: cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult getBuscausuariosvaBcaResult()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResponse: void setBuscausuariosvaBcaResult(cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult)
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult: java.lang.String errorMessage
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult: java.util.List solicitudes
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult: BuscausuariosvaBcaResult()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult: java.lang.String getErrorMessage()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult: java.util.List getSolicitudes()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: java.lang.String email
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: java.lang.String rut
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: java.lang.String usuCodigo
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: java.lang.String usuario
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: BuscausuariosvaBcaSolicitud()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: java.lang.String getEmail()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: void setEmail(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: java.lang.String getRut()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: void setRut(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: java.lang.String getUsuCodigo()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: void setUsuCodigo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: java.lang.String getUsuario()
+cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud: void setUsuario(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String tipoTran
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.math.BigDecimal montoEfe
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.math.BigDecimal montoDoc
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String codEmp
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String detefectivo
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String detdoctos
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String sencillo
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String usuario
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String estacion
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String codUsurecibe
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String cierre
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String tipoEnvio
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String idBandejapos
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: GrabaenviobanIns()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getTipoTran()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setTipoTran(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.math.BigDecimal getMontoEfe()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setMontoEfe(java.math.BigDecimal)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.math.BigDecimal getMontoDoc()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setMontoDoc(java.math.BigDecimal)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getCodEmp()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setCodEmp(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getDetefectivo()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setDetefectivo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getDetdoctos()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setDetdoctos(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getSencillo()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setSencillo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getUsuario()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setUsuario(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getEstacion()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setEstacion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getCodUsurecibe()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setCodUsurecibe(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getCierre()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setCierre(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getTipoEnvio()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setTipoEnvio(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: java.lang.String getIdBandejapos()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanIns: void setIdBandejapos(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResponse
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResponse: cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult grabaenviobanInsResult
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResponse: GrabaenviobanInsResponse()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResponse: cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult getGrabaenviobanInsResult()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResponse: void setGrabaenviobanInsResult(cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult: java.lang.String errorMessage
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult: java.util.List solicitudes
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult: GrabaenviobanInsResult()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult: java.lang.String getErrorMessage()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult: void setErrorMessage(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult: java.util.List getSolicitudes()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud: java.lang.String fechagrab
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud: java.lang.String nroInterno
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud: GrabaenviobanInsSolicitud()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud: java.lang.String getFechagrab()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud: void setFechagrab(java.lang.String)
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud: java.lang.String getNroInterno()
+cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud: void setNroInterno(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBca
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBca: java.lang.String codVendedor
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBca: java.lang.String codUsuario
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBca: MantusuariosearchBca()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBca: java.lang.String getCodVendedor()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBca: void setCodVendedor(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBca: java.lang.String getCodUsuario()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBca: void setCodUsuario(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResponse
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResponse: cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult mantusuariosearchBcaResult
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResponse: MantusuariosearchBcaResponse()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResponse: cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult getMantusuariosearchBcaResult()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResponse: void setMantusuariosearchBcaResult(cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult: java.lang.String errorMessage
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult: java.util.List solicitudes
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult: MantusuariosearchBcaResult()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult: java.lang.String getErrorMessage()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult: java.util.List getSolicitudes()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String apellidoMat
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String apellidoPat
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String bodega
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String codAlterno
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String codCargo
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String codUsuario
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String codVendedor
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String color
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String descripcioncargo
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String email
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String empresa
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String fechacumpleano
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String fecharetiro
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String fono1
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String fono2
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String idCargo
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String impnopomade
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String impnoportable
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String impportable
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String impportmade
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String indRetiro
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String nombres
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String rut
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String tienda
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String usuEstado
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String usuario
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: MantusuariosearchBcaSolicitud()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getApellidoMat()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setApellidoMat(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getApellidoPat()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setApellidoPat(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getBodega()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setBodega(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getCodAlterno()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setCodAlterno(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getCodCargo()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setCodCargo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getCodUsuario()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setCodUsuario(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getCodVendedor()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setCodVendedor(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getColor()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setColor(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getDescripcioncargo()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setDescripcioncargo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getEmail()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setEmail(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getEmpresa()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setEmpresa(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getFechacumpleano()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setFechacumpleano(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getFecharetiro()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setFecharetiro(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getFono1()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setFono1(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getFono2()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setFono2(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getIdCargo()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setIdCargo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getImpnopomade()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setImpnopomade(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getImpnoportable()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setImpnoportable(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getImpportable()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setImpportable(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getImpportmade()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setImpportmade(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getIndRetiro()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setIndRetiro(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getNombres()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setNombres(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getRut()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setRut(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getTienda()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setTienda(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getUsuEstado()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setUsuEstado(java.lang.String)
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: java.lang.String getUsuario()
+cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud: void setUsuario(java.lang.String)
+cl.imperial.sencillosolicitud.ws.ObjectFactory
+cl.imperial.sencillosolicitud.ws.ObjectFactory: ObjectFactory()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscabanusutieBca createBuscabanusutieBca()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja createBuscabanusutieBcaBandeja()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResponse createBuscabanusutieBcaResponse()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult createBuscabanusutieBcaResult()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBca createBuscaempresaxestacionBca()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResponse createBuscaempresaxestacionBcaResponse()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult createBuscaempresaxestacionBcaResult()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud createBuscaempresaxestacionBcaSolicitud()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca createBuscaultimovoucherBca()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResponse createBuscaultimovoucherBcaResponse()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult createBuscaultimovoucherBcaResult()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher createBuscaultimovoucherBcaVoucher()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca createBuscausuariosvaBca()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResponse createBuscausuariosvaBcaResponse()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult createBuscausuariosvaBcaResult()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud createBuscausuariosvaBcaSolicitud()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.WebFaultInfo createWebFaultInfo()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.GrabaenviobanIns createGrabaenviobanIns()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResponse createGrabaenviobanInsResponse()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult createGrabaenviobanInsResult()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud createGrabaenviobanInsSolicitud()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.MantusuariosearchBca createMantusuariosearchBca()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResponse createMantusuariosearchBcaResponse()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult createMantusuariosearchBcaResult()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud createMantusuariosearchBcaSolicitud()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraedenmonBca createTraedenmonBca()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraedenmonBcaResponse createTraedenmonBcaResponse()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult createTraedenmonBcaResult()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud createTraedenmonBcaSolicitud()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBca createTraesolicitudcjBca()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento createTraesolicitudcjBcaDocumento()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo createTraesolicitudcjBcaEfectivo()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResponse createTraesolicitudcjBcaResponse()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult createTraesolicitudcjBcaResult()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaSaldo createTraesolicitudcjBcaSaldo()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher createTraesolicitudcjBcaVoucher()
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscabanusutieBca(cl.imperial.sencillosolicitud.ws.BuscabanusutieBca)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscabanusutieBcaBandeja(cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaBandeja)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscabanusutieBcaResponse(cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResponse)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscabanusutieBcaResult(cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaempresaxestacionBca(cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBca)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaempresaxestacionBcaResponse(cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResponse)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaempresaxestacionBcaResult(cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaempresaxestacionBcaSolicitud(cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaSolicitud)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaultimovoucherBca(cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBca)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaultimovoucherBcaResponse(cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResponse)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaultimovoucherBcaResult(cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaultimovoucherBcaVoucher(cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaVoucher)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscausuariosvaBca(cl.imperial.sencillosolicitud.ws.BuscausuariosvaBca)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscausuariosvaBcaResponse(cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResponse)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscausuariosvaBcaResult(cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscausuariosvaBcaSolicitud(cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaSolicitud)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createFaultinfo(cl.imperial.sencillosolicitud.ws.WebFaultInfo)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createGrabaenviobanIns(cl.imperial.sencillosolicitud.ws.GrabaenviobanIns)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createGrabaenviobanInsResponse(cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResponse)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createGrabaenviobanInsResult(cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createGrabaenviobanInsSolicitud(cl.imperial.sencillosolicitud.ws.GrabaenviobanInsSolicitud)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createMantusuariosearchBca(cl.imperial.sencillosolicitud.ws.MantusuariosearchBca)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createMantusuariosearchBcaResponse(cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResponse)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createMantusuariosearchBcaResult(cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createMantusuariosearchBcaSolicitud(cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaSolicitud)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraedenmonBca(cl.imperial.sencillosolicitud.ws.TraedenmonBca)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraedenmonBcaResponse(cl.imperial.sencillosolicitud.ws.TraedenmonBcaResponse)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraedenmonBcaResult(cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraedenmonBcaSolicitud(cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraesolicitudcjBca(cl.imperial.sencillosolicitud.ws.TraesolicitudcjBca)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraesolicitudcjBcaDocumento(cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraesolicitudcjBcaEfectivo(cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraesolicitudcjBcaResponse(cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResponse)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraesolicitudcjBcaResult(cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraesolicitudcjBcaSaldo(cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaSaldo)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraesolicitudcjBcaVoucher(cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher)
+cl.imperial.sencillosolicitud.ws.ObjectFactory: javax.xml.bind.JAXBElement createWebFaultInfo(cl.imperial.sencillosolicitud.ws.WebFaultInfo)
+cl.imperial.sencillosolicitud.ws.ProcedureResult
+cl.imperial.sencillosolicitud.ws.ProcedureResult: ProcedureResult()
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb: cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult traedenmonBca(java.lang.String)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb: cl.imperial.sencillosolicitud.ws.GrabaenviobanInsResult grabaenviobanIns(java.lang.String,java.math.BigDecimal,java.math.BigDecimal,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb: cl.imperial.sencillosolicitud.ws.BuscabanusutieBcaResult buscabanusutieBca(java.lang.String,java.lang.String)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb: cl.imperial.sencillosolicitud.ws.BuscaempresaxestacionBcaResult buscaempresaxestacionBca(java.lang.String)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb: cl.imperial.sencillosolicitud.ws.BuscausuariosvaBcaResult buscausuariosvaBca(java.lang.String,java.lang.String)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb: cl.imperial.sencillosolicitud.ws.MantusuariosearchBcaResult mantusuariosearchBca(java.lang.String,java.lang.String)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb: cl.imperial.sencillosolicitud.ws.BuscaultimovoucherBcaResult buscaultimovoucherBca(java.lang.String,java.lang.String,java.lang.String)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult traesolicitudcjBca(java.lang.Integer)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebException
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebException: cl.imperial.sencillosolicitud.ws.WebFaultInfo faultInfo
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebException: SencilloSolicitudWebException(java.lang.String,cl.imperial.sencillosolicitud.ws.WebFaultInfo)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebException: SencilloSolicitudWebException(java.lang.String,cl.imperial.sencillosolicitud.ws.WebFaultInfo,java.lang.Throwable)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebException: cl.imperial.sencillosolicitud.ws.WebFaultInfo getFaultInfo()
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService: SencilloSolicitudWebService()
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService: SencilloSolicitudWebService(javax.xml.ws.WebServiceFeature[])
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService: SencilloSolicitudWebService(java.net.URL)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService: SencilloSolicitudWebService(java.net.URL,javax.xml.ws.WebServiceFeature[])
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService: SencilloSolicitudWebService(java.net.URL,javax.xml.namespace.QName)
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService: SencilloSolicitudWebService(java.net.URL,javax.xml.namespace.QName,javax.xml.ws.WebServiceFeature[])
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService: cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb getSencilloSolicitudWebPort()
+cl.imperial.sencillosolicitud.ws.SencilloSolicitudWebService: cl.imperial.sencillosolicitud.ws.SencilloSolicitudWeb getSencilloSolicitudWebPort(javax.xml.ws.WebServiceFeature[])
+cl.imperial.sencillosolicitud.ws.TraedenmonBca
+cl.imperial.sencillosolicitud.ws.TraedenmonBca: java.lang.String estado
+cl.imperial.sencillosolicitud.ws.TraedenmonBca: TraedenmonBca()
+cl.imperial.sencillosolicitud.ws.TraedenmonBca: java.lang.String getEstado()
+cl.imperial.sencillosolicitud.ws.TraedenmonBca: void setEstado(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResponse
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResponse: cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult traedenmonBcaResult
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResponse: TraedenmonBcaResponse()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResponse: cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult getTraedenmonBcaResult()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResponse: void setTraedenmonBcaResult(cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult)
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult: java.lang.String errorMessage
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult: java.util.List solicitudes
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult: TraedenmonBcaResult()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult: java.lang.String getErrorMessage()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaResult: java.util.List getSolicitudes()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: java.lang.String codigo
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: java.lang.String estado
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: java.lang.String glosa
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: java.lang.String valor
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: TraedenmonBcaSolicitud()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: java.lang.String getCodigo()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: void setCodigo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: java.lang.String getEstado()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: void setEstado(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: java.lang.String getGlosa()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: void setGlosa(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: java.lang.String getValor()
+cl.imperial.sencillosolicitud.ws.TraedenmonBcaSolicitud: void setValor(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBca
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBca: java.lang.Integer nroInterno
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBca: TraesolicitudcjBca()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBca: java.lang.Integer getNroInterno()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBca: void setNroInterno(java.lang.Integer)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String cuenta
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String idDocumento
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String monto
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String nroInterno
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String numero
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String tipoDocumento
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String tipoTransaccion
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: TraesolicitudcjBcaDocumento()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String getCuenta()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: void setCuenta(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String getIdDocumento()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: void setIdDocumento(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String getMonto()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: void setMonto(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String getNroInterno()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: void setNroInterno(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String getNumero()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: void setNumero(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String getTipoDocumento()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: void setTipoDocumento(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: java.lang.String getTipoTransaccion()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaDocumento: void setTipoTransaccion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: java.lang.String cantidadDen
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: java.lang.String codigoDen
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: java.lang.String nroInterno
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: java.lang.String tipoTransaccion
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: TraesolicitudcjBcaEfectivo()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: java.lang.String getCantidadDen()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: void setCantidadDen(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: java.lang.String getCodigoDen()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: void setCodigoDen(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: java.lang.String getNroInterno()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: void setNroInterno(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: java.lang.String getTipoTransaccion()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaEfectivo: void setTipoTransaccion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResponse
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResponse: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult traesolicitudcjBcaResult
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResponse: TraesolicitudcjBcaResponse()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResponse: cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult getTraesolicitudcjBcaResult()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResponse: void setTraesolicitudcjBcaResult(cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.util.List documentos
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.util.List efectivos
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.lang.String errorMessage
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.util.List saldos
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.util.List vouchers
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: TraesolicitudcjBcaResult()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.util.List getDocumentos()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.util.List getEfectivos()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.lang.String getErrorMessage()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.util.List getSaldos()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaResult: java.util.List getVouchers()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaSaldo
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaSaldo: java.lang.String saldocmr
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaSaldo: TraesolicitudcjBcaSaldo()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaSaldo: java.lang.String getSaldocmr()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaSaldo: void setSaldocmr(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String cierre
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String codEmp
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String codUsurecibe
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String estacion
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String estado
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String fecha
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String montoDocumentos
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String montoEfectivo
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String nomEmp
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String nroInterno
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String nroInternopadre
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String tipoEnvio
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String tipoTransaccion
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String usuario
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: TraesolicitudcjBcaVoucher()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getCierre()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setCierre(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getCodEmp()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setCodEmp(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getCodUsurecibe()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setCodUsurecibe(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getEstacion()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setEstacion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getEstado()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setEstado(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getFecha()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setFecha(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getMontoDocumentos()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setMontoDocumentos(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getMontoEfectivo()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setMontoEfectivo(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getNomEmp()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setNomEmp(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getNroInterno()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setNroInterno(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getNroInternopadre()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setNroInternopadre(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getTipoEnvio()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setTipoEnvio(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getTipoTransaccion()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setTipoTransaccion(java.lang.String)
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: java.lang.String getUsuario()
+cl.imperial.sencillosolicitud.ws.TraesolicitudcjBcaVoucher: void setUsuario(java.lang.String)
+cl.imperial.sencillosolicitud.ws.WebFaultInfo
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: java.lang.Integer errorCode
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: java.lang.String sqlState
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: java.lang.String subject
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: WebFaultInfo()
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: java.lang.Integer getErrorCode()
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: void setErrorCode(java.lang.Integer)
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: java.lang.String getSqlState()
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: void setSqlState(java.lang.String)
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: java.lang.String getSubject()
+cl.imperial.sencillosolicitud.ws.WebFaultInfo: void setSubject(java.lang.String)
+cl.imperial.sencillosolicitud.ws.package-info

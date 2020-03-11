@@ -1,0 +1,36 @@
+#-------------------------------------------------------------------------------
+# Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+# 
+# All  rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+# used under the terms of its associated license document.  You  may  NOT  copy,
+# modify,  sublicense,  or  distribute this source file or portions of it unless
+# previously authorized in writing by OBCOM INGENIERIA S.A. In any  event,  this
+# notice and above copyright must always be included verbatim with this file.
+#-------------------------------------------------------------------------------
+# https://docs.jboss.org/author/display/WFLY10/Documentation
+#-------------------------------------------------------------------------------
+
+# Define batch commands (all-or-nothing)
+batch
+
+# Define DesktopFX DataSource (ADJUTS PARAMETERS!!)
+data-source add \
+    --name=DesktopFxDataSourceSQL \
+    --driver-name=sqlserver \
+    --jndi-name=java:/jdbc/obcomDesktopFxDataSource \
+    --connection-url=jdbc:sqlserver://localhost:1433;database=ECUBAS \
+    --user-name=EcuWebUser \
+    --password=EcuWebUser \
+    --min-pool-size=0 \
+    --initial-pool-size=0 \
+    --max-pool-size=20 \
+    --idle-timeout-minutes=30
+
+# Enable datasource DesktopFxDataSourceSQL
+/subsystem=datasources/data-source=DesktopFxDataSourceSQL \
+    /:write-attribute(name=enabled,value=true)
+
+# Execute batch commands
+run-batch
+
+#-------------------------------------------------------------------------------

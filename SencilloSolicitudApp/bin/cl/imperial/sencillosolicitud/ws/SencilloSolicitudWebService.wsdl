@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8'?><definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud" name="SencilloSolicitudWebService">
+<types>
+<xsd:schema>
+<xsd:import namespace="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud" schemaLocation="SencilloSolicitudWebService.xsd"/>
+</xsd:schema>
+</types>
+<message name="traedenmonBca">
+<part name="parameters" element="tns:traedenmonBca"/>
+</message>
+<message name="traedenmonBcaResponse">
+<part name="parameters" element="tns:traedenmonBcaResponse"/>
+</message>
+<message name="SencilloSolicitudWebException">
+<part name="fault" element="tns:faultinfo"/>
+</message>
+<message name="grabaenviobanIns">
+<part name="parameters" element="tns:grabaenviobanIns"/>
+</message>
+<message name="grabaenviobanInsResponse">
+<part name="parameters" element="tns:grabaenviobanInsResponse"/>
+</message>
+<message name="buscabanusutieBca">
+<part name="parameters" element="tns:buscabanusutieBca"/>
+</message>
+<message name="buscabanusutieBcaResponse">
+<part name="parameters" element="tns:buscabanusutieBcaResponse"/>
+</message>
+<message name="buscaempresaxestacionBca">
+<part name="parameters" element="tns:buscaempresaxestacionBca"/>
+</message>
+<message name="buscaempresaxestacionBcaResponse">
+<part name="parameters" element="tns:buscaempresaxestacionBcaResponse"/>
+</message>
+<message name="buscausuariosvaBca">
+<part name="parameters" element="tns:buscausuariosvaBca"/>
+</message>
+<message name="buscausuariosvaBcaResponse">
+<part name="parameters" element="tns:buscausuariosvaBcaResponse"/>
+</message>
+<message name="mantusuariosearchBca">
+<part name="parameters" element="tns:mantusuariosearchBca"/>
+</message>
+<message name="mantusuariosearchBcaResponse">
+<part name="parameters" element="tns:mantusuariosearchBcaResponse"/>
+</message>
+<message name="buscaultimovoucherBca">
+<part name="parameters" element="tns:buscaultimovoucherBca"/>
+</message>
+<message name="buscaultimovoucherBcaResponse">
+<part name="parameters" element="tns:buscaultimovoucherBcaResponse"/>
+</message>
+<message name="traesolicitudcjBca">
+<part name="parameters" element="tns:traesolicitudcjBca"/>
+</message>
+<message name="traesolicitudcjBcaResponse">
+<part name="parameters" element="tns:traesolicitudcjBcaResponse"/>
+</message>
+<portType name="SencilloSolicitudWeb">
+<operation name="traedenmonBca">
+<input wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/traedenmonBcaRequest" message="tns:traedenmonBca"/>
+<output wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/traedenmonBcaResponse" message="tns:traedenmonBcaResponse"/>
+<fault message="tns:SencilloSolicitudWebException" name="SencilloSolicitudWebException" wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/traedenmonBca/Fault/SencilloSolicitudWebException"/>
+</operation>
+<operation name="grabaenviobanIns">
+<input wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/grabaenviobanInsRequest" message="tns:grabaenviobanIns"/>
+<output wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/grabaenviobanInsResponse" message="tns:grabaenviobanInsResponse"/>
+<fault message="tns:SencilloSolicitudWebException" name="SencilloSolicitudWebException" wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/grabaenviobanIns/Fault/SencilloSolicitudWebException"/>
+</operation>
+<operation name="buscabanusutieBca">
+<input wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscabanusutieBcaRequest" message="tns:buscabanusutieBca"/>
+<output wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscabanusutieBcaResponse" message="tns:buscabanusutieBcaResponse"/>
+<fault message="tns:SencilloSolicitudWebException" name="SencilloSolicitudWebException" wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscabanusutieBca/Fault/SencilloSolicitudWebException"/>
+</operation>
+<operation name="buscaempresaxestacionBca">
+<input wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscaempresaxestacionBcaRequest" message="tns:buscaempresaxestacionBca"/>
+<output wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscaempresaxestacionBcaResponse" message="tns:buscaempresaxestacionBcaResponse"/>
+<fault message="tns:SencilloSolicitudWebException" name="SencilloSolicitudWebException" wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscaempresaxestacionBca/Fault/SencilloSolicitudWebException"/>
+</operation>
+<operation name="buscausuariosvaBca">
+<input wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscausuariosvaBcaRequest" message="tns:buscausuariosvaBca"/>
+<output wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscausuariosvaBcaResponse" message="tns:buscausuariosvaBcaResponse"/>
+<fault message="tns:SencilloSolicitudWebException" name="SencilloSolicitudWebException" wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscausuariosvaBca/Fault/SencilloSolicitudWebException"/>
+</operation>
+<operation name="mantusuariosearchBca">
+<input wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/mantusuariosearchBcaRequest" message="tns:mantusuariosearchBca"/>
+<output wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/mantusuariosearchBcaResponse" message="tns:mantusuariosearchBcaResponse"/>
+<fault message="tns:SencilloSolicitudWebException" name="SencilloSolicitudWebException" wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/mantusuariosearchBca/Fault/SencilloSolicitudWebException"/>
+</operation>
+<operation name="buscaultimovoucherBca">
+<input wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscaultimovoucherBcaRequest" message="tns:buscaultimovoucherBca"/>
+<output wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscaultimovoucherBcaResponse" message="tns:buscaultimovoucherBcaResponse"/>
+<fault message="tns:SencilloSolicitudWebException" name="SencilloSolicitudWebException" wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/buscaultimovoucherBca/Fault/SencilloSolicitudWebException"/>
+</operation>
+<operation name="traesolicitudcjBca">
+<input wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/traesolicitudcjBcaRequest" message="tns:traesolicitudcjBca"/>
+<output wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/traesolicitudcjBcaResponse" message="tns:traesolicitudcjBcaResponse"/>
+<fault message="tns:SencilloSolicitudWebException" name="SencilloSolicitudWebException" wsam:Action="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud/SencilloSolicitudWeb/traesolicitudcjBca/Fault/SencilloSolicitudWebException"/>
+</operation>
+</portType>
+<binding name="SencilloSolicitudWebPortBinding" type="tns:SencilloSolicitudWeb">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="traedenmonBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="SencilloSolicitudWebException">
+<soap:fault name="SencilloSolicitudWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="grabaenviobanIns">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="SencilloSolicitudWebException">
+<soap:fault name="SencilloSolicitudWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="buscabanusutieBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="SencilloSolicitudWebException">
+<soap:fault name="SencilloSolicitudWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="buscaempresaxestacionBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="SencilloSolicitudWebException">
+<soap:fault name="SencilloSolicitudWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="buscausuariosvaBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="SencilloSolicitudWebException">
+<soap:fault name="SencilloSolicitudWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="mantusuariosearchBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="SencilloSolicitudWebException">
+<soap:fault name="SencilloSolicitudWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="buscaultimovoucherBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="SencilloSolicitudWebException">
+<soap:fault name="SencilloSolicitudWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="traesolicitudcjBca">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="SencilloSolicitudWebException">
+<soap:fault name="SencilloSolicitudWebException" use="literal"/>
+</fault>
+</operation>
+</binding>
+<service name="SencilloSolicitudWebService">
+<port name="SencilloSolicitudWebPort" binding="tns:SencilloSolicitudWebPortBinding">
+<soap:address location="http://localhost:8080/sencillosolicitud/SencilloSolicitudWebService"/>
+</port>
+</service>
+</definitions>

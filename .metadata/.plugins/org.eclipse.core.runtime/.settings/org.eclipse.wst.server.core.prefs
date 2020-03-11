@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="JEE 8.0 Runtime Library" location\="C\:/Java/Workspace1.116/DesktopFX/Deploy/xlibs/jee" name\="JEE 8.0 Runtime Library" runtime-type-id\="org.eclipse.jst.server.core.runtimeType" timestamp\="2" vm-install-id\="1583867080436" vm-install-type-id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>\r\n</runtimes>\r\n

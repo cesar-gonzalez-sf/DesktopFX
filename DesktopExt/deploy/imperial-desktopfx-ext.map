@@ -1,0 +1,5 @@
+cl.obcom.desktopfx.ext.Extension -> cl.obcom.desktopfx.ext.Extension:
+    33:35:void <init>() -> <init>
+    52:81:java.util.Map getParameters() -> getParameters
+    103:103:void start(cl.obcom.desktopfx.core.Desktop) -> start
+    118:118:void stop() -> stop

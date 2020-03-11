@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?><xs:schema xmlns:tns="http://ws.autorizadorventa.imperial.cl/autorizadorventa" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://ws.autorizadorventa.imperial.cl/autorizadorventa">
+
+<xs:element name="buscaclienterutBca" type="tns:buscaclienterutBca"/>
+
+<xs:element name="buscaclienterutBcaCliente" type="tns:BuscaclienterutBcaCliente"/>
+
+<xs:element name="buscaclienterutBcaResponse" type="tns:buscaclienterutBcaResponse"/>
+
+<xs:element name="buscaclienterutBcaResult" type="tns:BuscaclienterutBcaResult"/>
+
+<xs:element name="faultinfo" nillable="true" type="tns:WebFaultInfo"/>
+
+<xs:element name="webFaultInfo" type="tns:WebFaultInfo"/>
+
+<xs:complexType name="buscaclienterutBca">
+<xs:sequence>
+<xs:element name="rutCliente" type="xs:string" minOccurs="0"/>
+<xs:element name="codEntidad" type="xs:string" minOccurs="0"/>
+<xs:element name="codSucursal" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaclienterutBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:buscaclienterutBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscaclienterutBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="clientes" type="tns:BuscaclienterutBcaCliente" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="ProcedureResult" abstract="true">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="BuscaclienterutBcaCliente">
+<xs:sequence>
+<xs:element name="cliente" type="xs:string" minOccurs="0"/>
+<xs:element name="codEntidad" type="xs:string" minOccurs="0"/>
+<xs:element name="codSucursal" type="xs:string" minOccurs="0"/>
+<xs:element name="dvCliente" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="rutCliente" type="xs:string" minOccurs="0"/>
+<xs:element name="valido" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="WebFaultInfo">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:int" minOccurs="0"/>
+<xs:element name="sqlState" type="xs:string" minOccurs="0"/>
+<xs:element name="subject" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) IMPERIAL S.A. All rights reserved.
+ *
+ * All  rights  to  this product are owned by IMPERIAL S.A. and may only be used
+ * under the terms of its associated license document. You may NOT copy, modify,
+ * sublicense,  or  distribute  this  source  file  or  portions  of  it  unless
+ * previously  authorized  in writing by IMPERIAL S.A. In any event, this notice
+ * and above copyright must always be included verbatim with this file.
+-->
+<web-ext xmlns="http://websphere.ibm.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://websphere.ibm.com/xml/ns/javaee
+    http://websphere.ibm.com/xml/ns/javaee/ibm-web-ext_1_0.xsd"
+  version="1.0">
+
+  <reload-interval value="3"/>
+  <context-root uri="desktopfx"/>
+  <enable-directory-browsing value="false"/>
+  <enable-file-serving value="true"/>
+  <enable-reloading value="true"/>
+  <enable-serving-servlets-by-class-name value="true"/>
+
+</web-ext>

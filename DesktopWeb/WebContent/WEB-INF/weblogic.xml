@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) IMPERIAL S.A. All rights reserved.
+ *
+ * All  rights  to  this product are owned by IMPERIAL S.A. and may only be used
+ * under the terms of its associated license document. You may NOT copy, modify,
+ * sublicense,  or  distribute  this  source  file  or  portions  of  it  unless
+ * previously  authorized  in writing by IMPERIAL S.A. In any event, this notice
+ * and above copyright must always be included verbatim with this file.
+-->
+<weblogic-web-app
+  xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
+    http://xmlns.oracle.com/weblogic/weblogic-web-app
+    http://xmlns.oracle.com/weblogic/weblogic-web-app/1.1/weblogic-web-app.xsd"
+  version="1.1">
+
+  <!-- ===================================================================== -->
+  <!-- == Resources ======================================================== -->
+  <!-- ===================================================================== -->
+
+  <resource-description>
+    <res-ref-name>DesktopFxDataSource</res-ref-name>
+    <jndi-name>jdbc/obcomDesktopFxDataSource</jndi-name>
+  </resource-description>
+
+  <resource-description>
+    <res-ref-name>DesktopFxMailSession</res-ref-name>
+    <jndi-name>mail/obcomDesktopFxMailSession</jndi-name>
+  </resource-description>
+
+  <!-- ===================================================================== -->
+  <!-- == Context Root ===================================================== -->
+  <!-- ===================================================================== -->
+
+  <context-root>desktopfx</context-root>
+
+</weblogic-web-app>

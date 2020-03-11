@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?><xs:schema xmlns:tns="http://ws.cajaunificada.imperial.cl/cajaunificada" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://ws.cajaunificada.imperial.cl/cajaunificada">
+
+<xs:element name="faultinfo" nillable="true" type="tns:WebFaultInfo"/>
+
+<xs:element name="registraPago" type="tns:registraPago"/>
+
+<xs:element name="registraPagoDetalle" type="tns:RegistraPagoDetalle"/>
+
+<xs:element name="registraPagoResponse" type="tns:registraPagoResponse"/>
+
+<xs:element name="registraPagoResult" type="tns:RegistraPagoResult"/>
+
+<xs:element name="startup" type="tns:startup"/>
+
+<xs:element name="startupPropiedad" type="tns:StartupPropiedad"/>
+
+<xs:element name="startupResponse" type="tns:startupResponse"/>
+
+<xs:element name="startupResult" type="tns:StartupResult"/>
+
+<xs:element name="valeGet" type="tns:valeGet"/>
+
+<xs:element name="valeGetResponse" type="tns:valeGetResponse"/>
+
+<xs:element name="valeGetResult" type="tns:ValeGetResult"/>
+
+<xs:element name="webFaultInfo" type="tns:WebFaultInfo"/>
+
+<xs:complexType name="valeGet">
+<xs:sequence>
+<xs:element name="userCode" type="xs:string" minOccurs="0"/>
+<xs:element name="profileCode" type="xs:decimal" minOccurs="0"/>
+<xs:element name="stationName" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInterno" type="xs:int"/>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="valeGetResponse">
+<xs:sequence>
+<xs:element ref="tns:valeGetResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValeGetResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="descuento" type="xs:int"/>
+<xs:element name="fechaEmision" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="monto" type="xs:int"/>
+<xs:element name="nombreCliente" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoDocumento" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="ProcedureResult" abstract="true">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="WebFaultInfo">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:int" minOccurs="0"/>
+<xs:element name="sqlState" type="xs:string" minOccurs="0"/>
+<xs:element name="subject" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="startup">
+<xs:sequence>
+<xs:element name="userCode" type="xs:string" minOccurs="0"/>
+<xs:element name="profileCode" type="xs:decimal" minOccurs="0"/>
+<xs:element name="stationName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="startupResponse">
+<xs:sequence>
+<xs:element ref="tns:startupResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="StartupResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="propiedades" type="tns:StartupPropiedad" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="StartupPropiedad">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="valor" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registraPago">
+<xs:sequence>
+<xs:element name="nroInterno" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registraPagoResponse">
+<xs:sequence>
+<xs:element ref="tns:registraPagoResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegistraPagoResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="clienteCiudad" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteComuna" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteCondiciones" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteDireccion" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteDv" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteOrdenCompra" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteRazonSocial" type="xs:string" minOccurs="0"/>
+<xs:element name="clienteRut" type="xs:string" minOccurs="0"/>
+<xs:element name="detalles" type="tns:RegistraPagoDetalle" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="dteFechaHoraEmision" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dteFolio" type="xs:string" minOccurs="0"/>
+<xs:element name="dteObservaciones" type="xs:string" minOccurs="0"/>
+<xs:element name="dteTipoDocumento" type="xs:string" minOccurs="0"/>
+<xs:element name="emisorDireccionMatriz" type="xs:string" minOccurs="0"/>
+<xs:element name="emisorDireccionSucursal" type="xs:string" minOccurs="0"/>
+<xs:element name="emisorDv" type="xs:string" minOccurs="0"/>
+<xs:element name="emisorGiro" type="xs:string" minOccurs="0"/>
+<xs:element name="emisorRazonSocial" type="xs:string" minOccurs="0"/>
+<xs:element name="emisorRut" type="xs:string" minOccurs="0"/>
+<xs:element name="emisorVendedor" type="xs:string" minOccurs="0"/>
+<xs:element name="iva" type="xs:int"/>
+<xs:element name="total" type="xs:int"/>
+<xs:element name="totalNeto" type="xs:int"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="RegistraPagoDetalle">
+<xs:sequence>
+<xs:element name="cantidad" type="xs:decimal" minOccurs="0"/>
+<xs:element name="codRapido" type="xs:int"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="precioUnitario" type="xs:int"/>
+<xs:element name="total" type="xs:decimal" minOccurs="0"/>
+<xs:element name="unidadMedida" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

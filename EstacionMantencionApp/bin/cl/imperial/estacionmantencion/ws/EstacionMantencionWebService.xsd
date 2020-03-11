@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8'?><xs:schema xmlns:tns="http://ws.estacionmantencion.imperial.cl/estacionmantencion" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://ws.estacionmantencion.imperial.cl/estacionmantencion">
+
+<xs:element name="buscaempBca" type="tns:buscaempBca"/>
+
+<xs:element name="buscaempBcaEstacion" type="tns:BuscaempBcaEstacion"/>
+
+<xs:element name="buscaempBcaResponse" type="tns:buscaempBcaResponse"/>
+
+<xs:element name="buscaempBcaResult" type="tns:BuscaempBcaResult"/>
+
+<xs:element name="buscaestBca" type="tns:buscaestBca"/>
+
+<xs:element name="buscaestBcaEstacion" type="tns:BuscaestBcaEstacion"/>
+
+<xs:element name="buscaestBcaResponse" type="tns:buscaestBcaResponse"/>
+
+<xs:element name="buscaestBcaResult" type="tns:BuscaestBcaResult"/>
+
+<xs:element name="buscausuBca" type="tns:buscausuBca"/>
+
+<xs:element name="buscausuBcaEstacion" type="tns:BuscausuBcaEstacion"/>
+
+<xs:element name="buscausuBcaResponse" type="tns:buscausuBcaResponse"/>
+
+<xs:element name="buscausuBcaResult" type="tns:BuscausuBcaResult"/>
+
+<xs:element name="eliminaestEli" type="tns:eliminaestEli"/>
+
+<xs:element name="eliminaestEliResponse" type="tns:eliminaestEliResponse"/>
+
+<xs:element name="eliminaestEliResult" type="tns:EliminaestEliResult"/>
+
+<xs:element name="faultinfo" nillable="true" type="tns:WebFaultInfo"/>
+
+<xs:element name="ingresaestIns" type="tns:ingresaestIns"/>
+
+<xs:element name="ingresaestInsRegistro" type="tns:IngresaestInsRegistro"/>
+
+<xs:element name="ingresaestInsResponse" type="tns:ingresaestInsResponse"/>
+
+<xs:element name="ingresaestInsResult" type="tns:IngresaestInsResult"/>
+
+<xs:element name="webFaultInfo" type="tns:WebFaultInfo"/>
+
+<xs:complexType name="buscaempBca">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="buscaempBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:buscaempBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscaempBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="estaciones" type="tns:BuscaempBcaEstacion" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="ProcedureResult" abstract="true">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="BuscaempBcaEstacion">
+<xs:sequence>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="nomEmp" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="WebFaultInfo">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:int" minOccurs="0"/>
+<xs:element name="sqlState" type="xs:string" minOccurs="0"/>
+<xs:element name="subject" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaestIns">
+<xs:sequence>
+<xs:element name="est" type="xs:string" minOccurs="0"/>
+<xs:element name="emp" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoest" type="xs:string" minOccurs="0"/>
+<xs:element name="desc" type="xs:string" minOccurs="0"/>
+<xs:element name="sucran" type="xs:string" minOccurs="0"/>
+<xs:element name="estran" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaestInsResponse">
+<xs:sequence>
+<xs:element ref="tns:ingresaestInsResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IngresaestInsResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="registros" type="tns:IngresaestInsRegistro" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="IngresaestInsRegistro">
+<xs:sequence>
+<xs:element name="ins" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscausuBca">
+<xs:sequence>
+<xs:element name="usuCodigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscausuBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:buscausuBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscausuBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="estaciones" type="tns:BuscausuBcaEstacion" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="BuscausuBcaEstacion">
+<xs:sequence>
+<xs:element name="apellidoMat" type="xs:string" minOccurs="0"/>
+<xs:element name="apellidoPat" type="xs:string" minOccurs="0"/>
+<xs:element name="ciudad" type="xs:string" minOccurs="0"/>
+<xs:element name="comuna" type="xs:string" minOccurs="0"/>
+<xs:element name="nombres" type="xs:string" minOccurs="0"/>
+<xs:element name="pais" type="xs:string" minOccurs="0"/>
+<xs:element name="usuCodigo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminaestEli">
+<xs:sequence>
+<xs:element name="est" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminaestEliResponse">
+<xs:sequence>
+<xs:element ref="tns:eliminaestEliResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminaestEliResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="buscaestBca">
+<xs:sequence>
+<xs:element name="est" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaestBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:buscaestBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscaestBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="estaciones" type="tns:BuscaestBcaEstacion" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="BuscaestBcaEstacion">
+<xs:sequence>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="estacion" type="xs:string" minOccurs="0"/>
+<xs:element name="estacionRandom" type="xs:string" minOccurs="0"/>
+<xs:element name="sucursalRandom" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoestacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

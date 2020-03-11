@@ -1,0 +1,27 @@
+<!--
+ * Copyright (c) IMPERIAL S.A. All rights reserved.
+ *
+ * All  rights  to  this product are owned by IMPERIAL S.A. and may only be used
+ * under the terms of its associated license document. You may NOT copy, modify,
+ * sublicense,  or  distribute  this  source  file  or  portions  of  it  unless
+ * previously  authorized  in writing by IMPERIAL S.A. In any event, this notice
+ * and above copyright must always be included verbatim with this file.
+-->
+<project name="imperial-sencillosolicitud-web" default="war-deploy-all" basedir=".">
+    <!-- Define war specification version -->
+    <property name="war.version" value="1.1"/>
+
+    <!-- Sign files using JarSigner -->
+    <property name="use.jarsigner" value="true"/>
+
+    <!-- Import common ant war generation tasks -->
+    <import file="../../Deploy/ant/build-war.xml"/>
+
+    <!-- Builds the application war depend proyects -->
+    <target name="war-depends">
+        <ant dir="../../SencilloSolicitudApp/deploy" inheritall="false">
+            <property name="jnlp.dir" value="${jnlp.dir}"/>
+            <property name="jar.version" value="${war.version}"/>
+        </ant>
+    </target>
+</project>

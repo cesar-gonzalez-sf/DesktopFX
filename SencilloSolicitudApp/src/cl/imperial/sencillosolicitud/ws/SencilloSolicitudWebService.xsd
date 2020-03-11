@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8'?><xs:schema xmlns:tns="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://ws.sencillosolicitud.imperial.cl/sencillosolicitud">
+
+<xs:element name="buscabanusutieBca" type="tns:buscabanusutieBca"/>
+
+<xs:element name="buscabanusutieBcaBandeja" type="tns:BuscabanusutieBcaBandeja"/>
+
+<xs:element name="buscabanusutieBcaResponse" type="tns:buscabanusutieBcaResponse"/>
+
+<xs:element name="buscabanusutieBcaResult" type="tns:BuscabanusutieBcaResult"/>
+
+<xs:element name="buscaempresaxestacionBca" type="tns:buscaempresaxestacionBca"/>
+
+<xs:element name="buscaempresaxestacionBcaResponse" type="tns:buscaempresaxestacionBcaResponse"/>
+
+<xs:element name="buscaempresaxestacionBcaResult" type="tns:BuscaempresaxestacionBcaResult"/>
+
+<xs:element name="buscaempresaxestacionBcaSolicitud" type="tns:BuscaempresaxestacionBcaSolicitud"/>
+
+<xs:element name="buscaultimovoucherBca" type="tns:buscaultimovoucherBca"/>
+
+<xs:element name="buscaultimovoucherBcaResponse" type="tns:buscaultimovoucherBcaResponse"/>
+
+<xs:element name="buscaultimovoucherBcaResult" type="tns:BuscaultimovoucherBcaResult"/>
+
+<xs:element name="buscaultimovoucherBcaVoucher" type="tns:BuscaultimovoucherBcaVoucher"/>
+
+<xs:element name="buscausuariosvaBca" type="tns:buscausuariosvaBca"/>
+
+<xs:element name="buscausuariosvaBcaResponse" type="tns:buscausuariosvaBcaResponse"/>
+
+<xs:element name="buscausuariosvaBcaResult" type="tns:BuscausuariosvaBcaResult"/>
+
+<xs:element name="buscausuariosvaBcaSolicitud" type="tns:BuscausuariosvaBcaSolicitud"/>
+
+<xs:element name="faultinfo" nillable="true" type="tns:WebFaultInfo"/>
+
+<xs:element name="grabaenviobanIns" type="tns:grabaenviobanIns"/>
+
+<xs:element name="grabaenviobanInsResponse" type="tns:grabaenviobanInsResponse"/>
+
+<xs:element name="grabaenviobanInsResult" type="tns:GrabaenviobanInsResult"/>
+
+<xs:element name="grabaenviobanInsSolicitud" type="tns:GrabaenviobanInsSolicitud"/>
+
+<xs:element name="mantusuariosearchBca" type="tns:mantusuariosearchBca"/>
+
+<xs:element name="mantusuariosearchBcaResponse" type="tns:mantusuariosearchBcaResponse"/>
+
+<xs:element name="mantusuariosearchBcaResult" type="tns:MantusuariosearchBcaResult"/>
+
+<xs:element name="mantusuariosearchBcaSolicitud" type="tns:MantusuariosearchBcaSolicitud"/>
+
+<xs:element name="traedenmonBca" type="tns:traedenmonBca"/>
+
+<xs:element name="traedenmonBcaResponse" type="tns:traedenmonBcaResponse"/>
+
+<xs:element name="traedenmonBcaResult" type="tns:TraedenmonBcaResult"/>
+
+<xs:element name="traedenmonBcaSolicitud" type="tns:TraedenmonBcaSolicitud"/>
+
+<xs:element name="traesolicitudcjBca" type="tns:traesolicitudcjBca"/>
+
+<xs:element name="traesolicitudcjBcaDocumento" type="tns:TraesolicitudcjBcaDocumento"/>
+
+<xs:element name="traesolicitudcjBcaEfectivo" type="tns:TraesolicitudcjBcaEfectivo"/>
+
+<xs:element name="traesolicitudcjBcaResponse" type="tns:traesolicitudcjBcaResponse"/>
+
+<xs:element name="traesolicitudcjBcaResult" type="tns:TraesolicitudcjBcaResult"/>
+
+<xs:element name="traesolicitudcjBcaSaldo" type="tns:TraesolicitudcjBcaSaldo"/>
+
+<xs:element name="traesolicitudcjBcaVoucher" type="tns:TraesolicitudcjBcaVoucher"/>
+
+<xs:element name="webFaultInfo" type="tns:WebFaultInfo"/>
+
+<xs:complexType name="buscaempresaxestacionBca">
+<xs:sequence>
+<xs:element name="estacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaempresaxestacionBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:buscaempresaxestacionBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscaempresaxestacionBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="solicitudes" type="tns:BuscaempresaxestacionBcaSolicitud" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="ProcedureResult" abstract="true">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="BuscaempresaxestacionBcaSolicitud">
+<xs:sequence>
+<xs:element name="ajustesencillo" type="xs:string" minOccurs="0"/>
+<xs:element name="bodega" type="xs:string" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="codRegion" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="estacion" type="xs:string" minOccurs="0"/>
+<xs:element name="listaventa" type="xs:string" minOccurs="0"/>
+<xs:element name="nomEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="razonsocialSii" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoestacion" type="xs:string" minOccurs="0"/>
+<xs:element name="tipofacEcodespacho" type="xs:string" minOccurs="0"/>
+<xs:element name="tipofacEcoretiro" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="WebFaultInfo">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:int" minOccurs="0"/>
+<xs:element name="sqlState" type="xs:string" minOccurs="0"/>
+<xs:element name="subject" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscausuariosvaBca">
+<xs:sequence>
+<xs:element name="valor" type="xs:string" minOccurs="0"/>
+<xs:element name="parametro" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscausuariosvaBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:buscausuariosvaBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscausuariosvaBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="solicitudes" type="tns:BuscausuariosvaBcaSolicitud" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="BuscausuariosvaBcaSolicitud">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+<xs:element name="usuCodigo" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traesolicitudcjBca">
+<xs:sequence>
+<xs:element name="nroInterno" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traesolicitudcjBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:traesolicitudcjBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TraesolicitudcjBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="documentos" type="tns:TraesolicitudcjBcaDocumento" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="efectivos" type="tns:TraesolicitudcjBcaEfectivo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="saldos" type="tns:TraesolicitudcjBcaSaldo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="vouchers" type="tns:TraesolicitudcjBcaVoucher" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="TraesolicitudcjBcaDocumento">
+<xs:sequence>
+<xs:element name="cuenta" type="xs:string" minOccurs="0"/>
+<xs:element name="idDocumento" type="xs:string" minOccurs="0"/>
+<xs:element name="monto" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInterno" type="xs:string" minOccurs="0"/>
+<xs:element name="numero" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoDocumento" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoTransaccion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TraesolicitudcjBcaEfectivo">
+<xs:sequence>
+<xs:element name="cantidadDen" type="xs:string" minOccurs="0"/>
+<xs:element name="codigoDen" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInterno" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoTransaccion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TraesolicitudcjBcaSaldo">
+<xs:sequence>
+<xs:element name="saldocmr" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TraesolicitudcjBcaVoucher">
+<xs:sequence>
+<xs:element name="cierre" type="xs:string" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="codUsurecibe" type="xs:string" minOccurs="0"/>
+<xs:element name="estacion" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="montoDocumentos" type="xs:string" minOccurs="0"/>
+<xs:element name="montoEfectivo" type="xs:string" minOccurs="0"/>
+<xs:element name="nomEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInterno" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInternopadre" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoEnvio" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoTransaccion" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mantusuariosearchBca">
+<xs:sequence>
+<xs:element name="codVendedor" type="xs:string" minOccurs="0"/>
+<xs:element name="codUsuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mantusuariosearchBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:mantusuariosearchBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="MantusuariosearchBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="solicitudes" type="tns:MantusuariosearchBcaSolicitud" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="MantusuariosearchBcaSolicitud">
+<xs:sequence>
+<xs:element name="apellidoMat" type="xs:string" minOccurs="0"/>
+<xs:element name="apellidoPat" type="xs:string" minOccurs="0"/>
+<xs:element name="bodega" type="xs:string" minOccurs="0"/>
+<xs:element name="codAlterno" type="xs:string" minOccurs="0"/>
+<xs:element name="codCargo" type="xs:string" minOccurs="0"/>
+<xs:element name="codUsuario" type="xs:string" minOccurs="0"/>
+<xs:element name="codVendedor" type="xs:string" minOccurs="0"/>
+<xs:element name="color" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcioncargo" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="fechacumpleano" type="xs:string" minOccurs="0"/>
+<xs:element name="fecharetiro" type="xs:string" minOccurs="0"/>
+<xs:element name="fono1" type="xs:string" minOccurs="0"/>
+<xs:element name="fono2" type="xs:string" minOccurs="0"/>
+<xs:element name="idCargo" type="xs:string" minOccurs="0"/>
+<xs:element name="impnopomade" type="xs:string" minOccurs="0"/>
+<xs:element name="impnoportable" type="xs:string" minOccurs="0"/>
+<xs:element name="impportable" type="xs:string" minOccurs="0"/>
+<xs:element name="impportmade" type="xs:string" minOccurs="0"/>
+<xs:element name="indRetiro" type="xs:string" minOccurs="0"/>
+<xs:element name="nombres" type="xs:string" minOccurs="0"/>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+<xs:element name="tienda" type="xs:string" minOccurs="0"/>
+<xs:element name="usuEstado" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaultimovoucherBca">
+<xs:sequence>
+<xs:element name="tipoTran" type="xs:string" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaultimovoucherBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:buscaultimovoucherBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscaultimovoucherBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="vouchers" type="tns:BuscaultimovoucherBcaVoucher" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="BuscaultimovoucherBcaVoucher">
+<xs:sequence>
+<xs:element name="cierre" type="xs:string" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="codUsurecibe" type="xs:string" minOccurs="0"/>
+<xs:element name="estacion" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="montoDocumentos" type="xs:string" minOccurs="0"/>
+<xs:element name="montoEfectivo" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInterno" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInternopadre" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoTransaccion" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grabaenviobanIns">
+<xs:sequence>
+<xs:element name="tipoTran" type="xs:string" minOccurs="0"/>
+<xs:element name="montoEfe" type="xs:decimal" minOccurs="0"/>
+<xs:element name="montoDoc" type="xs:decimal" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="detefectivo" type="xs:string" minOccurs="0"/>
+<xs:element name="detdoctos" type="xs:string" minOccurs="0"/>
+<xs:element name="sencillo" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="estacion" type="xs:string" minOccurs="0"/>
+<xs:element name="codUsurecibe" type="xs:string" minOccurs="0"/>
+<xs:element name="cierre" type="xs:string" minOccurs="0"/>
+<xs:element name="tipoEnvio" type="xs:string" minOccurs="0"/>
+<xs:element name="idBandejapos" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grabaenviobanInsResponse">
+<xs:sequence>
+<xs:element ref="tns:grabaenviobanInsResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GrabaenviobanInsResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="solicitudes" type="tns:GrabaenviobanInsSolicitud" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="GrabaenviobanInsSolicitud">
+<xs:sequence>
+<xs:element name="fechagrab" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInterno" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traedenmonBca">
+<xs:sequence>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traedenmonBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:traedenmonBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TraedenmonBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="solicitudes" type="tns:TraedenmonBcaSolicitud" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="TraedenmonBcaSolicitud">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="glosa" type="xs:string" minOccurs="0"/>
+<xs:element name="valor" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscabanusutieBca">
+<xs:sequence>
+<xs:element name="codEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="cajero" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscabanusutieBcaResponse">
+<xs:sequence>
+<xs:element ref="tns:buscabanusutieBcaResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscabanusutieBcaResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="bandejas" type="tns:BuscabanusutieBcaBandeja" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="BuscabanusutieBcaBandeja">
+<xs:sequence>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="desestado" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="idBandejapos" type="xs:string" minOccurs="0"/>
+<xs:element name="identificador" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

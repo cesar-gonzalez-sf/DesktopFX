@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/Deploy/olibs/obcom-desktopfx-jws.jar"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+        <listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+        <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="cl.obcom.desktopfx.jws.Main"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Debug"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Ddesktopfx.codebase=http://localhost:8080/desktopfx/&#13;&#10;-Ddesktopfx.https.port=8181&#13;&#10;-Ddesktopfx.server.type=jee&#13;&#10;-Duser.language=es"/>
+</launchConfiguration>

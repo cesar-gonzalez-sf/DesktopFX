@@ -1,0 +1,41 @@
+#-------------------------------------------------------------------------------
+# Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+# 
+# All  rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+# used under the terms of its associated license document.  You  may  NOT  copy,
+# modify,  sublicense,  or  distribute this source file or portions of it unless
+# previously authorized in writing by OBCOM INGENIERIA S.A. In any  event,  this
+# notice and above copyright must always be included verbatim with this file.
+#-------------------------------------------------------------------------------
+# https://docs.jboss.org/author/display/WFLY10/Documentation
+#-------------------------------------------------------------------------------
+
+# Define batch commands (all-or-nothing)
+batch
+
+# Define a outbound-socket-binding named "GmailSMTP"
+/socket-binding-group=standard-sockets/remote-destination-outbound-socket-binding=GmailSMTP:add( \
+    host="smtp.gmail.com", \
+    port="587" \
+)
+
+# Define a JavaMail session named "DesktopFxMailSession"
+/subsystem=mail/mail-session=DesktopFxMailSession:add( \
+    jndi-name="java:/mail/obcomDesktopFxMailSession", \
+    from="desktopfx@imperial.cl", \
+    debug="false" \
+)
+
+# Add a reference from "DesktopFxMailSession" to "GmailSMTP"
+/subsystem=mail/mail-session=DesktopFxMailSession/server=smtp:add( \
+    outbound-socket-binding-ref="GmailSMTP", \
+    username="desktopfx@imperial.cl", \
+    password="pico.pal.que.lee", \
+    ssl="false", \
+    tls="true" \
+)
+
+# Execute batch commands
+run-batch
+
+#-------------------------------------------------------------------------------

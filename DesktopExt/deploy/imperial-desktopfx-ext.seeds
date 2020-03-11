@@ -1,0 +1,5 @@
+cl.obcom.desktopfx.ext.Extension
+cl.obcom.desktopfx.ext.Extension: Extension()
+cl.obcom.desktopfx.ext.Extension: java.util.Map getParameters()
+cl.obcom.desktopfx.ext.Extension: void start(cl.obcom.desktopfx.core.Desktop)
+cl.obcom.desktopfx.ext.Extension: void stop()

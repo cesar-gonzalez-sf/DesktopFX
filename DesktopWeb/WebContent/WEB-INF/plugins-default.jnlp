@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) IMPERIAL S.A. All rights reserved.
+ *
+ * All  rights  to  this product are owned by IMPERIAL S.A. and may only be used
+ * under the terms of its associated license document. You may NOT copy, modify,
+ * sublicense,  or  distribute  this  source  file  or  portions  of  it  unless
+ * previously  authorized  in writing by IMPERIAL S.A. In any event, this notice
+ * and above copyright must always be included verbatim with this file.
+-->
+<jnlp spec="7.0+" codebase="@CODE.BASE@" href="plugins-@PLUGIN.NAME@.jnlp">
+  <information>
+    <title>IMPERIAL DesktopFX Plugins</title>
+    <vendor>IMPERIAL S.A.</vendor>
+    <homepage href="http://www.imperial.cl/desktopfx/"/>
+    <description>IMPERIAL DesktopFX Plugins</description>
+    <icon href="images/desktop32.jpg" width="32" height="32" kind="default"/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <update check="timeout" policy="always"/>
+@PLUGINS@
+  <component-desc/>
+</jnlp>

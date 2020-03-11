@@ -1,0 +1,141 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+-- 
+-- All rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+-- used  under  the  terms of its associated license document. You may NOT copy,
+-- modify, sublicense, or distribute this source file or portions of  it  unless
+-- previously  authorized in writing by OBCOM INGENIERIA S.A. In any event, this
+-- notice and above copyright must always be included verbatim with this file.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+1) Instalar "JDK 1.8.0_241 de Oracle" en el directorio:
+
+/opt/jdk1.8.0_241
+
+--------------------------------------------------------------------------------
+2) Descomprimir "payara-5.201.zip" para instalar "Payara 5.201" en:
+
+/opt/payara-5.201
+
+--------------------------------------------------------------------------------
+3) Editar "/opt/payara-5.201/glassfish/config/asenv.conf" y agregar:
+
+AS_JAVA="/opt/jdk1.8.0_241"
+
+--------------------------------------------------------------------------------
+4) Iniciar el servidor "Payara 5.201" ejecutando el comando:
+
+    /opt/payara-5.201/bin/asadmin start-domain domain1
+
+Si necesita detener el servidor "Payara 5.201" ejecute el comando:
+
+    /opt/payara-5.201/bin/asadmin stop-domain domain1
+
+--------------------------------------------------------------------------------
+5) Abrir la "Consola HTTP" de administración de Payara navegando a la URL:
+
+http://localhost:4848/
+
+--------------------------------------------------------------------------------
+6) Configuración segura de "Payara 5.201" usando herramienta "asadmin":
+
+# Stop "Payara 5.201" server
+/opt/payara-5.201/bin/asadmin stop-domain domain1
+
+# Change admin password
+/opt/payara-5.201/bin/asadmin change-admin-password --domain_name domain1
+# 1. enter "admin" for user (default)
+# 2. hit enter because default password is empty
+# 3. choose you new password ==> adminadmin
+
+# Start "Payara 5.201" server
+/opt/payara-5.201/bin/asadmin start-domain domain1
+
+# Login for automatic login...
+/opt/payara-5.201/bin/asadmin login
+# prompt:
+# user = admin
+# password = adminadmin
+# ==> stores password in file /home/payara/.gfclient/pass
+
+# Enable https for remote access to admin console requests
+# to http://xxxx:4848/ are redirected to https://xxxx:4848/
+/opt/payara-5.201/bin/asadmin enable-secure-admin
+
+# After we change "keystore.jks" in "config" dir
+/opt/payara-5.201/bin/asadmin enable-secure-admin
+/opt/payara-5.201/bin/asadmin restart-domain domain1
+
+# Change JVM Options
+/opt/payara-5.201/bin/asadmin delete-jvm-options -- -Xms2g
+/opt/payara-5.201/bin/asadmin create-jvm-options -- -Xms512m
+/opt/payara-5.201/bin/asadmin delete-jvm-options -- -Xmx2g
+/opt/payara-5.201/bin/asadmin create-jvm-options -- -Xmx1024m
+/opt/payara-5.201/bin/asadmin delete-jvm-options -- '-XX:MaxMetaspaceSize=2g'
+/opt/payara-5.201/bin/asadmin create-jvm-options -- '-XX:MaxMetaspaceSize=1024m'
+
+# Get rid of HTTP header "Server" ("Payara 5.201" obfuscation)
+/opt/payara-5.201/bin/asadmin create-jvm-options -Dproduct.name=""
+
+# Optional: enable/disable autodeploy (via "autodeploy" folder)
+/opt/payara-5.201/bin/asadmin set server.admin-service.das-config.autodeploy-enabled=false
+
+# Disable sending "X-Powered-By" in HTTP headers ("Payara 5.201" obfuscation)
+/opt/payara-5.201/bin/asadmin set server.network-config.protocols.protocol.http-listener-1.http.xpowered-by=false
+/opt/payara-5.201/bin/asadmin set server.network-config.protocols.protocol.http-listener-2.http.xpowered-by=false
+/opt/payara-5.201/bin/asadmin set server.network-config.protocols.protocol.admin-listener.http.xpowered-by=false
+/opt/payara-5.201/bin/asadmin set server.network-config.protocols.protocol.sec-admin-listener.http.xpowered-by=false
+
+--------------------------------------------------------------------------------
+7) Crear "SYSTEMD" como "root":
+
+# Editar el siguiente archivo "/usr/lib/systemd/system/payara.service"
+
+	[Unit]
+	Description=Payara 5.201 service
+
+	[Service]
+	Type=forking
+	WorkingDirectory=/opt/payara-5.201/glassfish/domains/domain1
+	ExecStart=/opt/payara-5.201/glassfish/bin/asadmin start-domain
+	ExecStop=/opt/payara-5.201/glassfish/bin/asadmin stop-domain
+	User=payara
+	Group=payara
+
+	[Install]
+	WantedBy=multi-user.target
+
+# Luego se puede controlar PAYARA con los siguientes comandos:
+
+	systemctl start payara
+	systemctl stop payara
+	systemctl status payara
+
+	systemctl enable payara
+	systemctl disable payara
+
+--------------------------------------------------------------------------------
+8) Definir directorio HTTP en otro lugar. Editar archivo "domain.xml":
+
+...
+<http-service>
+    <access-log></access-log>
+    <virtual-server network-listeners="http-listener-1,http-listener-2" id="server">
+        <property name="alternatedocroot_1" value="from=/layouts/* dir=C:/Inetpub/wwwroot/adapi/Recs"></property>
+    </virtual-server>
+    <virtual-server network-listeners="admin-listener" id="__asadmin"></virtual-server>
+</http-service>
+...
+
+--------------------------------------------------------------------------------
+9) Configurar firewall the RedHat para habilitar puertos 8080, 8181 y 4848:
+
+firewall-cmd --get-active-zones
+firewall-cmd --get-default-zone
+firewall-cmd --zone=public --list-ports
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
+firewall-cmd --zone=public --add-port=8181/tcp --permanent
+firewall-cmd --zone=public --add-port=4848/tcp --permanent
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+ * Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+ *
+ * All rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+ * used  under  the  terms of its associated license document. You may NOT copy,
+ * modify, sublicense, or distribute this source file or portions of  it  unless
+ * previously  authorized in writing by OBCOM INGENIERIA S.A. In any event, this
+ * notice and above copyright must always be included verbatim with this file.
+-->
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="private, max-age=0, must-revalidate">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>OBCOM DesktopFX</title>
+    <style type="text/css">
+        body        {font:12pt verdana; text-align:justify; overflow:auto;}
+        h1          {font-size:16pt; text-align:center;}
+        .b          {text-decoration:none; color:black; background:#FFD568; border:outset; padding:5pt;}
+        .b:hover    {font-weight:bold;}
+        span        {color:#c20000;}
+    </style>
+    <script type="text/javascript">
+        function adjustLinkHref(linkId) {
+            if (navigator.platform.toLowerCase().indexOf("win") >= 0) {
+                var link = document.getElementById(linkId);
+                link.href = "jnlp:" + link.href;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>OBCOM DesktopFX</h1>
+    <p>
+        El  producto <span>OBCOM DesktopFX</span> permite desarrollar soluciones
+        RIA  (Rich  Internet  Applications)   utilizando   la   tecnologías   <a
+        href="http://www.java.com/"      target="_blank">Java</a>      y      <a
+        href="http://docs.oracle.com/javase/8/javase-clienttechnologies.htm"
+        target="_blank">JavaFX</a> de Oracle, versión <span>8</span> o superior.
+    </p>
+    <p>
+        Esta  página  permite descargar e instalar <span>OBCOM DesktopFX</span>.
+        Una vez instalada, la aplicación se ejecuta haciendo clic  en  un  ícono
+        colocado en el escritorio. Si hay nuevas versiones disponibles, éstas se
+        descargarán   e   instalarán   automáticamente   antes  de  ejecutar  la
+        aplicación. No es necesario volver a usar esta página.
+    </p>
+    <p style="text-align:center">
+        <a id="desktop" href="desktopfx.jnlp" class="b">Iniciar OBCOM DesktopFX</a>
+        <script type="text/javascript">adjustLinkHref("desktop");</script>
+        <a id="player" href="player.jnlp" class="b">Desinstalar OBCOM DesktopFX</a>
+        <script type="text/javascript">adjustLinkHref("player");</script>
+    </p>
+</body>
+</html>

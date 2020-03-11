@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+ *
+ * All rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+ * used  under  the  terms of its associated license document. You may NOT copy,
+ * modify, sublicense, or distribute this source file or portions of  it  unless
+ * previously  authorized in writing by OBCOM INGENIERIA S.A. In any event, this
+ * notice and above copyright must always be included verbatim with this file.
+-->
+<jnlp spec="7.0+" codebase="@CODE.BASE@" href="desktopfx.jnlp">
+  <information>
+    <title>@JNLP.TITLE@ @HOST.NAME@</title>
+    <vendor>OBCOM INGENIERIA S.A. (Chile)</vendor>
+    <homepage href="http://www.obcom.cl/desktopfx/"/>
+    <description>OBCOM DesktopFX Application</description>
+    <icon href="images/desktop16.jpg" width="16" height="16" kind="default"/>
+    <icon href="images/desktop32.jpg" width="32" height="32" kind="default"/>
+    <icon href="images/desktop48.jpg" width="48" height="48" kind="default"/>
+    <icon href="images/desktop64.jpg" width="64" height="64" kind="default"/>
+    <icon href="images/splash.jpg" width="320" height="139" kind="splash"/>
+    <shortcut online="true" install="true">
+      <desktop/>
+      <menu submenu="@JNLP.MENU@"/>
+    </shortcut>
+    <offline-allowed/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <update check="timeout" policy="always"/>
+  <resources>
+    <j2se version="1.8" initial-heap-size="128m" max-heap-size="1024m"/>
+    <j2se version="9+" initial-heap-size="128m" max-heap-size="1024m" java-vm-args="--add-modules=java.xml.ws"/>
+    <jar href="jnlp/obcom-desktopfx-jws.jar" part="desktopfx" main="true"/>
+    <jar href="jnlp/obcom-desktopfx-app.jar" part="desktopfx"/>
+    <extension href="plugins-obcom.jnlp"/>
+  </resources>
+  <resources os="Windows" arch="x86">
+    <nativelib href="jnlp/obcom-desktopfx-jni-win-x86.jar" part="desktopfx"/>
+  </resources>
+  <resources os="Windows" arch="amd64">
+    <nativelib href="jnlp/obcom-desktopfx-jni-win-amd64.jar" part="desktopfx"/>
+  </resources>
+  <resources os="Mac OS X">
+    <nativelib href="jnlp/obcom-desktopfx-jni-mac-x86-64.jar" part="desktopfx"/>
+  </resources>
+  <resources os="Linux" arch="ppc i386 i686">
+    <nativelib href="jnlp/obcom-desktopfx-jni-linux-i386.jar" part="desktopfx"/>
+  </resources>
+  <resources os="Linux" arch="x86_64 amd64">
+    <nativelib href="jnlp/obcom-desktopfx-jni-linux-amd64.jar" part="desktopfx"/>
+  </resources>
+  <resources>
+    <jar href="jnlp/obcom-fst.jar" part="fst" download="lazy"/>
+    <package name="org.nustaq.*" part="fst" recursive="true"/>
+    <jar href="jnlp/obcom-fst-jackson.jar" part="jackson" download="lazy"/>
+    <package name="com.fasterxml.jackson.core.*" part="jackson" recursive="true"/>
+    <jar href="jnlp/obcom-fst-javassist.jar" part="javassist" download="lazy"/>
+    <package name="javassist.*" part="javassist" recursive="true"/>
+    <jar href="jnlp/obcom-fst-objenesis.jar" part="objenesis" download="lazy"/>
+    <package name="org.objenesis.*" part="objenesis" recursive="true"/>
+    <jar href="jnlp/obcom-websocket-lib.jar" part="websocket" download="lazy"/>
+    <package name="javax.websocket.*" part="websocket" recursive="true"/>
+  </resources>
+  <application-desc main-class="cl.obcom.desktopfx.jws.Main">
+    <argument>--desktopfx.https.port=@HTTPS.PORT@</argument>
+    <argument>--desktopfx.server.type=@SERVER.TYPE@</argument>
+  </application-desc>
+</jnlp>

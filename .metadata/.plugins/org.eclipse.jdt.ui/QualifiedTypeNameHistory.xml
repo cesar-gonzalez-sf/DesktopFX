@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cl.imperial.ctacte.Common"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="javafx.scene.layout.Region"/>
+<fullyQualifiedTypeName name="javafx.geometry.Insets"/>
+<fullyQualifiedTypeName name="javafx.scene.Node"/>
+<fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TableView"/>
+<fullyQualifiedTypeName name="javafx.scene.control.cell.TextFieldTableCell"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TableCell"/>
+<fullyQualifiedTypeName name="javafx.geometry.Pos"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Tooltip"/>
+<fullyQualifiedTypeName name="cl.obcom.desktopfx.util.Settings"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="cl.obcom.desktopfx.netserver.NetServerMessage"/>
+<fullyQualifiedTypeName name="cl.obcom.desktopfx.netserver.NetServerMessage.Reply"/>
+<fullyQualifiedTypeName name="cl.obcom.desktopfx.core.MulticastEvent"/>
+<fullyQualifiedTypeName name="cl.obcom.desktopfx.core.Desktop"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.ws.wsdl.writer.document.Port"/>
+<fullyQualifiedTypeName name="cl.imperial.tipodocumento.ws.TipoDocumentoWebService"/>
+</qualifiedTypeNameHistroy>

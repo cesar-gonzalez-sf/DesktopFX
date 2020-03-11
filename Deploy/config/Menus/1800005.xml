@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) IMPERIAL S.A. All rights reserved.
+ *
+ * All  rights  to  this product are owned by IMPERIAL S.A. and may only be used
+ * under the terms of its associated license document. You may NOT copy, modify,
+ * sublicense,  or  distribute  this  source  file  or  portions  of  it  unless
+ * previously  authorized  in writing by IMPERIAL S.A. In any event, this notice
+ * and above copyright must always be included verbatim with this file.
+-->
+<menu-def xmlns="http://www.obcom.cl/ns/menu"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.obcom.cl/ns/menu http://www.obcom.cl/ns/menu.xsd">
+
+    <menu text="Migración" tool-tip="Migración" icon="cilinder" expand="true">
+        <leaf text="Estación Mantención"    tool-tip="Gráfico editable"     icon="center" name="ESTAMANTE"  plugin="estacionmantencion" main="cl.imperial.estacionmantencion.Main"/>
+        <leaf text="Solicitud Sencillo"     tool-tip="Solicitud Sencillo"   icon="center" name="SOLSEN"     plugin="sencillosolicitud"  main="cl.imperial.sencillosolicitud.Main"/>
+    </menu>
+  
+    <menu text="Caja Celula" tool-tip="Migraciòn Celula" icon="sessions" expand="true">    
+        <leaf text="Caja Unificada" tool-tip="Caja Unificada" icon="center" name="CAUNI" plugin="cajaunificada" main="cl.imperial.cajaunificada.Main"/>
+        <leaf text="Autorizador Venta" tool-tip="Autorizador Venta" icon="center" name="AUVEN" plugin="autorizadorventa" main="cl.imperial.autorizadorventa.Main"/>
+    </menu>
+    
+</menu-def>

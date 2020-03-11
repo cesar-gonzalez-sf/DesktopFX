@@ -1,0 +1,278 @@
+cl.imperial.cajaunificada.Main
+cl.imperial.cajaunificada.Main: Main(cl.obcom.desktopfx.core.DesktopTask)
+cl.imperial.cajaunificada.Main: boolean ValidarValesConORC()
+cl.imperial.cajaunificada.Main: void EnvioBalin()
+cl.imperial.cajaunificada.Main: void displayError(javafx.scene.Node,java.lang.Throwable,java.lang.String)
+cl.imperial.cajaunificada.Main: void displayMessage(javafx.scene.Node,java.lang.String,java.lang.String)
+cl.imperial.cajaunificada.Main: boolean displayConfirmation(javafx.scene.Node,java.lang.String,java.lang.String)
+cl.imperial.cajaunificada.Main: java.lang.String displayInput(javafx.scene.Node,java.lang.String,java.lang.String)
+cl.imperial.cajaunificada.StartupParams
+cl.imperial.cajaunificada.StartupParams: java.lang.String getCodEmp()
+cl.imperial.cajaunificada.StartupParams: java.lang.String getIdBandejaPos()
+cl.imperial.cajaunificada.StartupParams: java.lang.String getNombreBandeja()
+cl.imperial.cajaunificada.StartupParams: void setNombreBandeja(java.lang.String)
+cl.imperial.cajaunificada.StartupParams: java.lang.String getSucursal()
+cl.imperial.cajaunificada.StartupParams: void setSucursal(java.lang.String)
+cl.imperial.cajaunificada.WebClient
+cl.imperial.cajaunificada.WebClient: WebClient(cl.imperial.cajaunificada.Main,cl.obcom.desktopfx.core.DesktopTask,boolean)
+cl.imperial.cajaunificada.WebClient: cl.imperial.cajaunificada.StartupParams startup(cl.obcom.desktopfx.core.DesktopTask)
+cl.imperial.cajaunificada.utils.CajaUnificadaException
+cl.imperial.cajaunificada.utils.CajaUnificadaException: long serialVersionUID
+cl.imperial.cajaunificada.utils.CajaUnificadaException: CajaUnificadaException()
+cl.imperial.cajaunificada.utils.CajaUnificadaException: CajaUnificadaException(java.lang.String)
+cl.imperial.cajaunificada.utils.CajaUnificadaException: CajaUnificadaException(java.lang.Throwable)
+cl.imperial.cajaunificada.utils.CajaUnificadaException: CajaUnificadaException(java.lang.String,java.lang.Throwable)
+cl.imperial.cajaunificada.utils.Convert
+cl.imperial.cajaunificada.utils.Convert: java.text.NumberFormat CODE_FORMAT
+cl.imperial.cajaunificada.utils.Convert: java.text.NumberFormat CURRENCY_FORMAT
+cl.imperial.cajaunificada.utils.Convert: java.lang.String trimOrEmpty(java.lang.String)
+cl.imperial.cajaunificada.utils.Convert: java.lang.String trimOrNull(java.lang.String)
+cl.imperial.cajaunificada.utils.Convert: java.lang.String[] splitRut(java.lang.String)
+cl.imperial.cajaunificada.utils.Convert: boolean decToBool(java.math.BigDecimal)
+cl.imperial.cajaunificada.utils.Convert: boolean strToBool(java.lang.String)
+cl.imperial.cajaunificada.utils.Convert: java.math.BigDecimal decOrZero(java.math.BigDecimal)
+cl.imperial.cajaunificada.utils.Convert: int decToIntExact(java.math.BigDecimal)
+cl.imperial.cajaunificada.utils.Convert: int decToIntRound(java.math.BigDecimal)
+cl.imperial.cajaunificada.utils.Convert: double decToDouble(java.math.BigDecimal)
+cl.imperial.cajaunificada.utils.Convert: java.lang.String formatCurrency(java.lang.Number)
+cl.imperial.cajaunificada.utils.Convert: java.lang.Integer tryParseInt(java.lang.String)
+cl.imperial.cajaunificada.utils.Convert: java.lang.String normalizeRUT(java.lang.String)
+cl.imperial.cajaunificada.utils.PdfUtil
+cl.imperial.cajaunificada.utils.PdfUtil: float getTextWidth(java.lang.String,org.apache.pdfbox.pdmodel.font.PDFont,float)
+cl.imperial.cajaunificada.utils.PdfUtil: void drawText(java.lang.String,org.apache.pdfbox.pdmodel.PDPageContentStream,org.apache.pdfbox.pdmodel.font.PDFont,float,float,float)
+cl.imperial.cajaunificada.utils.PdfUtil: void drawLine(org.apache.pdfbox.pdmodel.PDPageContentStream,float,float,float,float)
+cl.imperial.cajaunificada.utils.XmlUtil
+cl.imperial.cajaunificada.utils.XmlUtil: java.lang.String objToXml(java.lang.Object,boolean,boolean)
+cl.imperial.cajaunificada.utils.XmlUtil: java.lang.Object xmlToObj(java.lang.String,java.lang.Class)
+cl.imperial.cajaunificada.utils.XmlUtil: org.w3c.dom.Document buildDocument()
+cl.imperial.cajaunificada.utils.XmlUtil: java.lang.String xmlToStr(org.w3c.dom.Document)
+cl.imperial.cajaunificada.utils.XmlUtil: org.w3c.dom.Document strToXml(java.lang.String)
+cl.imperial.cajaunificada.utils.XmlUtil: org.w3c.dom.Element addChild(org.w3c.dom.Element,java.lang.String,java.lang.String)
+cl.imperial.cajaunificada.utils.XmlUtil: org.w3c.dom.Element addChild(org.w3c.dom.Element,java.lang.String,int)
+cl.imperial.cajaunificada.ws.CajaUnificadaWeb
+cl.imperial.cajaunificada.ws.CajaUnificadaWeb: cl.imperial.cajaunificada.ws.StartupResult startup(java.lang.String,java.math.BigDecimal,java.lang.String)
+cl.imperial.cajaunificada.ws.CajaUnificadaWeb: cl.imperial.cajaunificada.ws.ValeGetResult valeGet(java.lang.String,java.math.BigDecimal,java.lang.String,int,java.lang.String)
+cl.imperial.cajaunificada.ws.CajaUnificadaWeb: cl.imperial.cajaunificada.ws.RegistraPagoResult registraPago(int)
+cl.imperial.cajaunificada.ws.CajaUnificadaWebException
+cl.imperial.cajaunificada.ws.CajaUnificadaWebException: long serialVersionUID
+cl.imperial.cajaunificada.ws.CajaUnificadaWebException: cl.imperial.cajaunificada.ws.WebFaultInfo faultInfo
+cl.imperial.cajaunificada.ws.CajaUnificadaWebException: CajaUnificadaWebException(java.lang.String,cl.imperial.cajaunificada.ws.WebFaultInfo)
+cl.imperial.cajaunificada.ws.CajaUnificadaWebException: CajaUnificadaWebException(java.lang.String,cl.imperial.cajaunificada.ws.WebFaultInfo,java.lang.Throwable)
+cl.imperial.cajaunificada.ws.CajaUnificadaWebException: cl.imperial.cajaunificada.ws.WebFaultInfo getFaultInfo()
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService: CajaUnificadaWebService()
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService: CajaUnificadaWebService(javax.xml.ws.WebServiceFeature[])
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService: CajaUnificadaWebService(java.net.URL)
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService: CajaUnificadaWebService(java.net.URL,javax.xml.ws.WebServiceFeature[])
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService: CajaUnificadaWebService(java.net.URL,javax.xml.namespace.QName)
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService: CajaUnificadaWebService(java.net.URL,javax.xml.namespace.QName,javax.xml.ws.WebServiceFeature[])
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService: cl.imperial.cajaunificada.ws.CajaUnificadaWeb getCajaUnificadaWebPort()
+cl.imperial.cajaunificada.ws.CajaUnificadaWebService: cl.imperial.cajaunificada.ws.CajaUnificadaWeb getCajaUnificadaWebPort(javax.xml.ws.WebServiceFeature[])
+cl.imperial.cajaunificada.ws.ObjectFactory
+cl.imperial.cajaunificada.ws.ObjectFactory: ObjectFactory()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.WebFaultInfo createWebFaultInfo()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.RegistraPago createRegistraPago()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.RegistraPagoDetalle createRegistraPagoDetalle()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.RegistraPagoResponse createRegistraPagoResponse()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.RegistraPagoResult createRegistraPagoResult()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.Startup createStartup()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.StartupPropiedad createStartupPropiedad()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.StartupResponse createStartupResponse()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.StartupResult createStartupResult()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.ValeGet createValeGet()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.ValeGetResponse createValeGetResponse()
+cl.imperial.cajaunificada.ws.ObjectFactory: cl.imperial.cajaunificada.ws.ValeGetResult createValeGetResult()
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createFaultinfo(cl.imperial.cajaunificada.ws.WebFaultInfo)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createRegistraPago(cl.imperial.cajaunificada.ws.RegistraPago)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createRegistraPagoDetalle(cl.imperial.cajaunificada.ws.RegistraPagoDetalle)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createRegistraPagoResponse(cl.imperial.cajaunificada.ws.RegistraPagoResponse)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createRegistraPagoResult(cl.imperial.cajaunificada.ws.RegistraPagoResult)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createStartup(cl.imperial.cajaunificada.ws.Startup)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createStartupPropiedad(cl.imperial.cajaunificada.ws.StartupPropiedad)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createStartupResponse(cl.imperial.cajaunificada.ws.StartupResponse)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createStartupResult(cl.imperial.cajaunificada.ws.StartupResult)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createValeGet(cl.imperial.cajaunificada.ws.ValeGet)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createValeGetResponse(cl.imperial.cajaunificada.ws.ValeGetResponse)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createValeGetResult(cl.imperial.cajaunificada.ws.ValeGetResult)
+cl.imperial.cajaunificada.ws.ObjectFactory: javax.xml.bind.JAXBElement createWebFaultInfo(cl.imperial.cajaunificada.ws.WebFaultInfo)
+cl.imperial.cajaunificada.ws.ProcedureResult
+cl.imperial.cajaunificada.ws.ProcedureResult: ProcedureResult()
+cl.imperial.cajaunificada.ws.RegistraPago
+cl.imperial.cajaunificada.ws.RegistraPago: int nroInterno
+cl.imperial.cajaunificada.ws.RegistraPago: RegistraPago()
+cl.imperial.cajaunificada.ws.RegistraPago: int getNroInterno()
+cl.imperial.cajaunificada.ws.RegistraPago: void setNroInterno(int)
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: java.math.BigDecimal cantidad
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: int codRapido
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: java.lang.String descripcion
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: int precioUnitario
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: java.math.BigDecimal total
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: java.lang.String unidadMedida
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: RegistraPagoDetalle()
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: java.math.BigDecimal getCantidad()
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: void setCantidad(java.math.BigDecimal)
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: int getCodRapido()
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: void setCodRapido(int)
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: java.lang.String getDescripcion()
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: void setDescripcion(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: int getPrecioUnitario()
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: void setPrecioUnitario(int)
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: java.math.BigDecimal getTotal()
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: void setTotal(java.math.BigDecimal)
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: java.lang.String getUnidadMedida()
+cl.imperial.cajaunificada.ws.RegistraPagoDetalle: void setUnidadMedida(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResponse
+cl.imperial.cajaunificada.ws.RegistraPagoResponse: cl.imperial.cajaunificada.ws.RegistraPagoResult registraPagoResult
+cl.imperial.cajaunificada.ws.RegistraPagoResponse: RegistraPagoResponse()
+cl.imperial.cajaunificada.ws.RegistraPagoResponse: cl.imperial.cajaunificada.ws.RegistraPagoResult getRegistraPagoResult()
+cl.imperial.cajaunificada.ws.RegistraPagoResponse: void setRegistraPagoResult(cl.imperial.cajaunificada.ws.RegistraPagoResult)
+cl.imperial.cajaunificada.ws.RegistraPagoResult
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String clienteCiudad
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String clienteComuna
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String clienteCondiciones
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String clienteDireccion
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String clienteDv
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String clienteOrdenCompra
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String clienteRazonSocial
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String clienteRut
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.util.List detalles
+cl.imperial.cajaunificada.ws.RegistraPagoResult: javax.xml.datatype.XMLGregorianCalendar dteFechaHoraEmision
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String dteFolio
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String dteObservaciones
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String dteTipoDocumento
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String emisorDireccionMatriz
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String emisorDireccionSucursal
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String emisorDv
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String emisorGiro
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String emisorRazonSocial
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String emisorRut
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String emisorVendedor
+cl.imperial.cajaunificada.ws.RegistraPagoResult: int iva
+cl.imperial.cajaunificada.ws.RegistraPagoResult: int total
+cl.imperial.cajaunificada.ws.RegistraPagoResult: int totalNeto
+cl.imperial.cajaunificada.ws.RegistraPagoResult: RegistraPagoResult()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getClienteCiudad()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setClienteCiudad(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getClienteComuna()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setClienteComuna(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getClienteCondiciones()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setClienteCondiciones(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getClienteDireccion()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setClienteDireccion(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getClienteDv()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setClienteDv(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getClienteOrdenCompra()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setClienteOrdenCompra(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getClienteRazonSocial()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setClienteRazonSocial(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getClienteRut()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setClienteRut(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.util.List getDetalles()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: javax.xml.datatype.XMLGregorianCalendar getDteFechaHoraEmision()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setDteFechaHoraEmision(javax.xml.datatype.XMLGregorianCalendar)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getDteFolio()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setDteFolio(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getDteObservaciones()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setDteObservaciones(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getDteTipoDocumento()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setDteTipoDocumento(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getEmisorDireccionMatriz()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setEmisorDireccionMatriz(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getEmisorDireccionSucursal()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setEmisorDireccionSucursal(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getEmisorDv()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setEmisorDv(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getEmisorGiro()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setEmisorGiro(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getEmisorRazonSocial()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setEmisorRazonSocial(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getEmisorRut()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setEmisorRut(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: java.lang.String getEmisorVendedor()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setEmisorVendedor(java.lang.String)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: int getIva()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setIva(int)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: int getTotal()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setTotal(int)
+cl.imperial.cajaunificada.ws.RegistraPagoResult: int getTotalNeto()
+cl.imperial.cajaunificada.ws.RegistraPagoResult: void setTotalNeto(int)
+cl.imperial.cajaunificada.ws.Startup
+cl.imperial.cajaunificada.ws.Startup: java.lang.String userCode
+cl.imperial.cajaunificada.ws.Startup: java.math.BigDecimal profileCode
+cl.imperial.cajaunificada.ws.Startup: java.lang.String stationName
+cl.imperial.cajaunificada.ws.Startup: Startup()
+cl.imperial.cajaunificada.ws.Startup: java.lang.String getUserCode()
+cl.imperial.cajaunificada.ws.Startup: void setUserCode(java.lang.String)
+cl.imperial.cajaunificada.ws.Startup: java.math.BigDecimal getProfileCode()
+cl.imperial.cajaunificada.ws.Startup: void setProfileCode(java.math.BigDecimal)
+cl.imperial.cajaunificada.ws.Startup: java.lang.String getStationName()
+cl.imperial.cajaunificada.ws.Startup: void setStationName(java.lang.String)
+cl.imperial.cajaunificada.ws.StartupPropiedad
+cl.imperial.cajaunificada.ws.StartupPropiedad: java.lang.String nombre
+cl.imperial.cajaunificada.ws.StartupPropiedad: java.lang.String valor
+cl.imperial.cajaunificada.ws.StartupPropiedad: StartupPropiedad()
+cl.imperial.cajaunificada.ws.StartupPropiedad: java.lang.String getNombre()
+cl.imperial.cajaunificada.ws.StartupPropiedad: void setNombre(java.lang.String)
+cl.imperial.cajaunificada.ws.StartupPropiedad: java.lang.String getValor()
+cl.imperial.cajaunificada.ws.StartupPropiedad: void setValor(java.lang.String)
+cl.imperial.cajaunificada.ws.StartupResponse
+cl.imperial.cajaunificada.ws.StartupResponse: cl.imperial.cajaunificada.ws.StartupResult startupResult
+cl.imperial.cajaunificada.ws.StartupResponse: StartupResponse()
+cl.imperial.cajaunificada.ws.StartupResponse: cl.imperial.cajaunificada.ws.StartupResult getStartupResult()
+cl.imperial.cajaunificada.ws.StartupResponse: void setStartupResult(cl.imperial.cajaunificada.ws.StartupResult)
+cl.imperial.cajaunificada.ws.StartupResult
+cl.imperial.cajaunificada.ws.StartupResult: java.util.List propiedades
+cl.imperial.cajaunificada.ws.StartupResult: StartupResult()
+cl.imperial.cajaunificada.ws.StartupResult: java.util.List getPropiedades()
+cl.imperial.cajaunificada.ws.ValeGet
+cl.imperial.cajaunificada.ws.ValeGet: java.lang.String userCode
+cl.imperial.cajaunificada.ws.ValeGet: java.math.BigDecimal profileCode
+cl.imperial.cajaunificada.ws.ValeGet: java.lang.String stationName
+cl.imperial.cajaunificada.ws.ValeGet: int nroInterno
+cl.imperial.cajaunificada.ws.ValeGet: java.lang.String codEmp
+cl.imperial.cajaunificada.ws.ValeGet: ValeGet()
+cl.imperial.cajaunificada.ws.ValeGet: java.lang.String getUserCode()
+cl.imperial.cajaunificada.ws.ValeGet: void setUserCode(java.lang.String)
+cl.imperial.cajaunificada.ws.ValeGet: java.math.BigDecimal getProfileCode()
+cl.imperial.cajaunificada.ws.ValeGet: void setProfileCode(java.math.BigDecimal)
+cl.imperial.cajaunificada.ws.ValeGet: java.lang.String getStationName()
+cl.imperial.cajaunificada.ws.ValeGet: void setStationName(java.lang.String)
+cl.imperial.cajaunificada.ws.ValeGet: int getNroInterno()
+cl.imperial.cajaunificada.ws.ValeGet: void setNroInterno(int)
+cl.imperial.cajaunificada.ws.ValeGet: java.lang.String getCodEmp()
+cl.imperial.cajaunificada.ws.ValeGet: void setCodEmp(java.lang.String)
+cl.imperial.cajaunificada.ws.ValeGetResponse
+cl.imperial.cajaunificada.ws.ValeGetResponse: cl.imperial.cajaunificada.ws.ValeGetResult valeGetResult
+cl.imperial.cajaunificada.ws.ValeGetResponse: ValeGetResponse()
+cl.imperial.cajaunificada.ws.ValeGetResponse: cl.imperial.cajaunificada.ws.ValeGetResult getValeGetResult()
+cl.imperial.cajaunificada.ws.ValeGetResponse: void setValeGetResult(cl.imperial.cajaunificada.ws.ValeGetResult)
+cl.imperial.cajaunificada.ws.ValeGetResult
+cl.imperial.cajaunificada.ws.ValeGetResult: int descuento
+cl.imperial.cajaunificada.ws.ValeGetResult: javax.xml.datatype.XMLGregorianCalendar fechaEmision
+cl.imperial.cajaunificada.ws.ValeGetResult: int monto
+cl.imperial.cajaunificada.ws.ValeGetResult: java.lang.String nombreCliente
+cl.imperial.cajaunificada.ws.ValeGetResult: java.lang.String tipoDocumento
+cl.imperial.cajaunificada.ws.ValeGetResult: ValeGetResult()
+cl.imperial.cajaunificada.ws.ValeGetResult: int getDescuento()
+cl.imperial.cajaunificada.ws.ValeGetResult: void setDescuento(int)
+cl.imperial.cajaunificada.ws.ValeGetResult: javax.xml.datatype.XMLGregorianCalendar getFechaEmision()
+cl.imperial.cajaunificada.ws.ValeGetResult: void setFechaEmision(javax.xml.datatype.XMLGregorianCalendar)
+cl.imperial.cajaunificada.ws.ValeGetResult: int getMonto()
+cl.imperial.cajaunificada.ws.ValeGetResult: void setMonto(int)
+cl.imperial.cajaunificada.ws.ValeGetResult: java.lang.String getNombreCliente()
+cl.imperial.cajaunificada.ws.ValeGetResult: void setNombreCliente(java.lang.String)
+cl.imperial.cajaunificada.ws.ValeGetResult: java.lang.String getTipoDocumento()
+cl.imperial.cajaunificada.ws.ValeGetResult: void setTipoDocumento(java.lang.String)
+cl.imperial.cajaunificada.ws.WebFaultInfo
+cl.imperial.cajaunificada.ws.WebFaultInfo: java.lang.Integer errorCode
+cl.imperial.cajaunificada.ws.WebFaultInfo: java.lang.String sqlState
+cl.imperial.cajaunificada.ws.WebFaultInfo: java.lang.String subject
+cl.imperial.cajaunificada.ws.WebFaultInfo: WebFaultInfo()
+cl.imperial.cajaunificada.ws.WebFaultInfo: java.lang.Integer getErrorCode()
+cl.imperial.cajaunificada.ws.WebFaultInfo: void setErrorCode(java.lang.Integer)
+cl.imperial.cajaunificada.ws.WebFaultInfo: java.lang.String getSqlState()
+cl.imperial.cajaunificada.ws.WebFaultInfo: void setSqlState(java.lang.String)
+cl.imperial.cajaunificada.ws.WebFaultInfo: java.lang.String getSubject()
+cl.imperial.cajaunificada.ws.WebFaultInfo: void setSubject(java.lang.String)
+cl.imperial.cajaunificada.ws.package-info

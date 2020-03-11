@@ -1,0 +1,112 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) OBCOM INGENIERIA S.A. (Chile). All rights reserved.
+--
+-- All rights to this product are owned by OBCOM INGENIERIA S.A. and may only be
+-- used  under  the  terms of its associated license document. You may NOT copy,
+-- modify, sublicense, or distribute this source file or portions of  it  unless
+-- previously  authorized in writing by OBCOM INGENIERIA S.A. In any event, this
+-- notice and above copyright must always be included verbatim with this file.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+1) Instalar módulo de seguridad "obcom-web-security.jar" de DesktopFX:
+
+    1.1) Cambiarse al subdirectorio "WildFly/obcom"
+    1.2) Editar "add_module.[cmd/sh]" y ajustar "localhost:9990"
+    1.3) Ejecutar "add_module.[cmd/sh]" adecuadamente ajustado.
+
+--------------------------------------------------------------------------------
+2) Instalar driver JDBC para DesktopFX (se pueden instalar todos):
+
+    Para instalar driver JDBC para MySQL:
+        2.1) Cambiarse al subdirectorio "WildFly/mysql"
+        2.2) Editar "add_module.[cmd/sh]" y ajustar "localhost:9990"
+        2.3) Ejecutar "add_module.[cmd/sh]" adecuadamente ajustado.
+
+    Para instalar driver JDBC para Oracle:
+        2.1) Cambiarse al subdirectorio "WildFly/oracle"
+        2.2) Editar "add_module.[cmd/sh]" y ajustar "localhost:9990"
+        2.3) Ejecutar "add_module.[cmd/sh]" adecuadamente ajustado.
+
+    Para instalar driver JDBC para PostgreSQL:
+        2.1) Cambiarse al subdirectorio "WildFly/postgresql"
+        2.2) Editar "add_module.[cmd/sh]" y ajustar "localhost:9990"
+        2.3) Ejecutar "add_module.[cmd/sh]" adecuadamente ajustado.
+
+    Para instalar driver JDBC para SQL Server:
+        2.1) Cambiarse al subdirectorio "WildFly/sqlserver"
+        2.2) Editar "add_module.[cmd/sh]" y ajustar "localhost:9990"
+        2.3) Ejecutar "add_module.[cmd/sh]" adecuadamente ajustado.
+
+--------------------------------------------------------------------------------
+3) Definir datasource JDBC para DesktopFX (solo instalar UN SOLO datasource):
+
+    Para definir datasource JDBC para MySQL:
+        3.1) Cambiarse al subdirectorio "WildFly/mysql"
+        3.2) Editar "add_datasource.txt" y ajustar parámetros
+        3.3) Editar "add_datasource.[cmd/sh]" y ajustar "localhost:9990"
+        3.4) Ejecutar "add_datasource.[cmd/sh]" adecuadamente ajustado.
+
+    Para definir datasource JDBC para Oracle:
+        3.1) Cambiarse al subdirectorio "WildFly/oracle"
+        3.2) Editar "add_datasource.txt" y ajustar parámetros
+        3.3) Editar "add_datasource.[cmd/sh]" y ajustar "localhost:9990"
+        3.4) Ejecutar "add_datasource.[cmd/sh]" adecuadamente ajustado.
+
+    Para definir datasource JDBC para PostgreSQL:
+        3.1) Cambiarse al subdirectorio "WildFly/postgresql"
+        3.2) Editar "add_datasource.txt" y ajustar parámetros
+        3.3) Editar "add_datasource.[cmd/sh]" y ajustar "localhost:9990"
+        3.4) Ejecutar "add_datasource.[cmd/sh]" adecuadamente ajustado.
+
+    Para definir datasource JDBC para SQL Server:
+        3.1) Cambiarse al subdirectorio "WildFly/sqlserver"
+        3.2) Editar "add_datasource.txt" y ajustar parámetros
+        3.3) Editar "add_datasource.[cmd/sh]" y ajustar "localhost:9990"
+        3.4) Ejecutar "add_datasource.[cmd/sh]" adecuadamente ajustado.
+
+--------------------------------------------------------------------------------
+4) Agregar la sesión JavaMail para DesktopFX:
+
+    4.1) Cambiarse al subdirectorio "WildFly/mail"
+    4.2) Editar "add_mailsession.txt" y ajustar parámetros
+    4.3) Editar "add_mailsession.[cmd/sh]" y ajustar "localhost:9990"
+    4.4) Ejecutar "add_mailsession.[cmd/sh]" adecuadamente ajustado.
+
+--------------------------------------------------------------------------------
+5) Configurar OBCOM DesktopFX para definir el puerto HTTPS que usa WildFly:
+
+    Por defecto, el puerto HTTPS de WildFly es 8443. Recuerde editar y después 
+    cargar el archivo "Deploy\config\Properties\startup.properties" para cambiar
+    el puerto 8181 por 8443. La propiedad que hay que editar es:
+
+    desktopfx.jnlp.https.port = 8443
+
+--------------------------------------------------------------------------------
+6) Copiar a "C:\Java\wildfly-18.0.1.Final\standalone\deployments" (autodeploy):
+
+    obcom-desktopfx-web.war     -- [requerido] DesktopFX (con puerto 8443)
+    obcom-mcastnews-web.war     -- [requerido] Mensajes de Noticias
+
+    obcom-websecurity-web.war   -- [sugerido] Admin Usuarios via WebService
+    obcom-netsecurity-web.war   -- [sugerido] Admin Usuarios via NetServer
+    obcom-mcastadmin-web.war    -- [sugerido] Admin Mensajes Multicast
+    obcom-imclient-web.war      -- [sugerido] Mensajería Instantánea NetServer
+
+    obcom-samplechart-web.war   -- [opcional] Ejemplos de Gráficos
+    obcom-sampleemps-web.war    -- [opcional] Ejemplos de Empleados
+    obcom-sampleweb-web.war     -- [opcional] Ejemplos de Navegador
+
+--------------------------------------------------------------------------------
+7) Copiar a "C:\Java\wildfly-18.0.1.Final\welcome-content" (bienvenida):
+
+    7.1) Respaldar los archivos existentes en este directorio y luego:
+    7.2) "welcome-content/favicon.ico"    -- Define ícono del sitio web
+    7.3) "welcome-content/index.html"     -- Redirecciona a "/desktopfx/"
+
+--------------------------------------------------------------------------------
+8) Navegar a la URL de DesktopFX para descargar y ejecutar:
+
+    8.1) Navegar a la URL http://localhost:8080/desktopfx
+
+--------------------------------------------------------------------------------
