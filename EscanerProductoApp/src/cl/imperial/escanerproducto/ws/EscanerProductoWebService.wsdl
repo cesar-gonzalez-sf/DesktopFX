@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?><definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.escanerproducto.imperial.cl/escanerproducto" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://ws.escanerproducto.imperial.cl/escanerproducto" name="EscanerProductoWebService">
+<types>
+<xsd:schema>
+<xsd:import namespace="http://ws.escanerproducto.imperial.cl/escanerproducto" schemaLocation="EscanerProductoWebService.xsd"/>
+</xsd:schema>
+</types>
+<message name="traelecturascan">
+<part name="parameters" element="tns:traelecturascan"/>
+</message>
+<message name="traelecturascanResponse">
+<part name="parameters" element="tns:traelecturascanResponse"/>
+</message>
+<message name="EscanerProductoWebException">
+<part name="fault" element="tns:faultinfo"/>
+</message>
+<message name="grabavaletranstorio">
+<part name="parameters" element="tns:grabavaletranstorio"/>
+</message>
+<message name="grabavaletranstorioResponse">
+<part name="parameters" element="tns:grabavaletranstorioResponse"/>
+</message>
+<portType name="EscanerProductoWeb">
+<operation name="traelecturascan">
+<input wsam:Action="http://ws.escanerproducto.imperial.cl/escanerproducto/EscanerProductoWeb/traelecturascanRequest" message="tns:traelecturascan"/>
+<output wsam:Action="http://ws.escanerproducto.imperial.cl/escanerproducto/EscanerProductoWeb/traelecturascanResponse" message="tns:traelecturascanResponse"/>
+<fault message="tns:EscanerProductoWebException" name="EscanerProductoWebException" wsam:Action="http://ws.escanerproducto.imperial.cl/escanerproducto/EscanerProductoWeb/traelecturascan/Fault/EscanerProductoWebException"/>
+</operation>
+<operation name="grabavaletranstorio">
+<input wsam:Action="http://ws.escanerproducto.imperial.cl/escanerproducto/EscanerProductoWeb/grabavaletranstorioRequest" message="tns:grabavaletranstorio"/>
+<output wsam:Action="http://ws.escanerproducto.imperial.cl/escanerproducto/EscanerProductoWeb/grabavaletranstorioResponse" message="tns:grabavaletranstorioResponse"/>
+<fault message="tns:EscanerProductoWebException" name="EscanerProductoWebException" wsam:Action="http://ws.escanerproducto.imperial.cl/escanerproducto/EscanerProductoWeb/grabavaletranstorio/Fault/EscanerProductoWebException"/>
+</operation>
+</portType>
+<binding name="EscanerProductoWebPortBinding" type="tns:EscanerProductoWeb">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="traelecturascan">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="EscanerProductoWebException">
+<soap:fault name="EscanerProductoWebException" use="literal"/>
+</fault>
+</operation>
+<operation name="grabavaletranstorio">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="EscanerProductoWebException">
+<soap:fault name="EscanerProductoWebException" use="literal"/>
+</fault>
+</operation>
+</binding>
+<service name="EscanerProductoWebService">
+<port name="EscanerProductoWebPort" binding="tns:EscanerProductoWebPortBinding">
+<soap:address location="http://localhost:8080/escanerproducto/EscanerProductoWebService"/>
+</port>
+</service>
+</definitions>

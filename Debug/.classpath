@@ -8,5 +8,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/SencilloSolicitudApp"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/CajaUnificadaApp"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AutorizadorVentaApp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EscanerProductoApp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/TipoDocumentoApp"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

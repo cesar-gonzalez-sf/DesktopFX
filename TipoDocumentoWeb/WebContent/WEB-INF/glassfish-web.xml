@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) IMPERIAL S.A. All rights reserved.
+ *
+ * All  rights  to  this product are owned by IMPERIAL S.A. and may only be used
+ * under the terms of its associated license document. You may NOT copy, modify,
+ * sublicense,  or  distribute  this  source  file  or  portions  of  it  unless
+ * previously  authorized  in writing by IMPERIAL S.A. In any event, this notice
+ * and above copyright must always be included verbatim with this file.
+-->
+<!DOCTYPE glassfish-web-app PUBLIC
+    "-//GlassFish.org//DTD GlassFish Application Server 3.1 Servlet 3.0//EN"
+    "http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
+<glassfish-web-app>
+  <!-- ===================================================================== -->
+  <!-- == Context Root ===================================================== -->
+  <!-- ===================================================================== -->
+
+  <context-root>tipodocumento</context-root>
+
+  <!-- ===================================================================== -->
+  <!-- == Resources ======================================================== -->
+  <!-- ===================================================================== -->
+
+  <resource-ref>
+    <res-ref-name>TipoDocumentoDataSource</res-ref-name>
+    <jndi-name>jdbc/ImpDesktopFxDataSource</jndi-name>
+  </resource-ref>
+  
+</glassfish-web-app>

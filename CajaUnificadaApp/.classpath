@@ -5,5 +5,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OBCOM DesktopFX"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OBCOM Plugins"/>
 	<classpathentry kind="lib" path="C:/Java/Workspace1.116/DesktopFX/Deploy/xlibs/pdf/pdfbox-2.0.17.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EscanerProductoApp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/TipoDocumentoApp"/>
+	<classpathentry kind="lib" path="/Deploy/libs/imperial-tipodocumento-app.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

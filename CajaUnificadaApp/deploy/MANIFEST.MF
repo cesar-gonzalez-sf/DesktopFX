@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
 Ant-Version: Apache Ant 1.10.7
 Created-By: 1.8.0_241-b07 (Oracle Corporation)
-Build-DateTime: 2020-03-10T18:22:49.803-0300
+Build-DateTime: 2020-03-11T12:14:31.595-0300
 Specification-Title: IMPERIAL Caja Unificada Plugin
 Specification-Version: 1.1
 Specification-Vendor: IMPERIAL S.A.
 Implementation-Title: IMPERIAL Caja Unificada Plugin
-Implementation-Version: 1.1.20200310.182249
+Implementation-Version: 1.1.20200311.121431
 Implementation-Vendor: IMPERIAL S.A.
 Application-Name: IMPERIAL Caja Unificada Plugin
 Permissions: all-permissions

@@ -1,0 +1,25 @@
+<!--
+ * Copyright (c) IMPERIAL S.A. All rights reserved.
+ *
+ * All  rights  to  this product are owned by IMPERIAL S.A. and may only be used
+ * under the terms of its associated license document. You may NOT copy, modify,
+ * sublicense,  or  distribute  this  source  file  or  portions  of  it  unless
+ * previously  authorized  in writing by IMPERIAL S.A. In any event, this notice
+ * and above copyright must always be included verbatim with this file.
+-->
+<project name="imperial-escanerproducto-ws" default="ws-generate" basedir=".">
+    <!-- Base URL used to download WebService WSDL and XSD files -->
+    <property name="ws.url" value="http://localhost:8080/escanerproducto"/>
+
+    <!-- Name of the WebService client [Plugin]WebService -->
+    <property name="ws.name" value="EscanerProductoWebService"/>
+
+    <!-- Directory where the WebService client is generated -->
+    <property name="src.dir" value="../src"/>
+
+    <!-- Java package of the generated WebService client -->
+    <property name="ws.package" value="cl.imperial.escanerproducto.ws"/>
+
+    <!-- Import common ant ws generation tasks -->
+    <import file="../../Deploy/ant/build-ws.xml"/>
+</project>

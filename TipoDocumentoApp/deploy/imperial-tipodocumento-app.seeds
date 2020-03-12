@@ -1,0 +1,134 @@
+cl.imperial.tipodocumento.MainTipoDocumento
+cl.imperial.tipodocumento.MainTipoDocumento: MainTipoDocumento(cl.obcom.desktopfx.core.DesktopTask)
+cl.imperial.tipodocumento.TipoDctoDate
+cl.imperial.tipodocumento.TipoDctoDate: TipoDctoDate()
+cl.imperial.tipodocumento.TipoDctoDate: void clear()
+cl.imperial.tipodocumento.TipoDctoDate: void copyFrom(cl.imperial.tipodocumento.TipoDctoDate)
+cl.imperial.tipodocumento.TipoDctoDate: javafx.beans.property.StringProperty rutProperty()
+cl.imperial.tipodocumento.TipoDctoDate: java.lang.String getRut()
+cl.imperial.tipodocumento.TipoDctoDate: void setrut(java.lang.String)
+cl.imperial.tipodocumento.TipoDctoDate: javafx.beans.property.StringProperty codEntidadProperty()
+cl.imperial.tipodocumento.TipoDctoDate: java.lang.String getCodEntidad()
+cl.imperial.tipodocumento.TipoDctoDate: void setCodEntidad(java.lang.String)
+cl.imperial.tipodocumento.TipoDctoDate: javafx.beans.property.StringProperty codSucursalProperty()
+cl.imperial.tipodocumento.TipoDctoDate: java.lang.String getCodSucursal()
+cl.imperial.tipodocumento.TipoDctoDate: void setCodSucursal(java.lang.String)
+cl.imperial.tipodocumento.TipoDctoDate: javafx.beans.property.StringProperty CreditoProperty()
+cl.imperial.tipodocumento.TipoDctoDate: java.lang.String getCredito()
+cl.imperial.tipodocumento.TipoDctoDate: void setCredito(java.lang.String)
+cl.imperial.tipodocumento.TipoDctoDate: javafx.beans.property.StringProperty lista_precioProperty()
+cl.imperial.tipodocumento.TipoDctoDate: java.lang.String getlista_precio()
+cl.imperial.tipodocumento.TipoDctoDate: void setlista_precio(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBca
+cl.imperial.tipodocumento.ws.BuscaclienterutBca: java.lang.String vrutCliente
+cl.imperial.tipodocumento.ws.BuscaclienterutBca: BuscaclienterutBca()
+cl.imperial.tipodocumento.ws.BuscaclienterutBca: java.lang.String getVrutCliente()
+cl.imperial.tipodocumento.ws.BuscaclienterutBca: void setVrutCliente(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String cliCategoria
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String cliente
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String codEntidad
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String codSucursal
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String credAbiertoDoc
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String credito
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String dvCliente
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String estado
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String estadoCliente
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String idCliente
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String listaPrecio
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String materno
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String nombre
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String paterno
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String plazo
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String rutCliente
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String tipopersonalidad
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: BuscaclienterutBcaCliente()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getCliCategoria()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setCliCategoria(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getCliente()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setCliente(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getCodEntidad()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setCodEntidad(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getCodSucursal()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setCodSucursal(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getCredAbiertoDoc()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setCredAbiertoDoc(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getCredito()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setCredito(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getDvCliente()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setDvCliente(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getEstado()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setEstado(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getEstadoCliente()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setEstadoCliente(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getIdCliente()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setIdCliente(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getListaPrecio()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setListaPrecio(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getMaterno()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setMaterno(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getNombre()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setNombre(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getPaterno()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setPaterno(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getPlazo()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setPlazo(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getRutCliente()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setRutCliente(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: java.lang.String getTipopersonalidad()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente: void setTipopersonalidad(java.lang.String)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResponse
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResponse: cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult buscaclienterutBcaResult
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResponse: BuscaclienterutBcaResponse()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResponse: cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult getBuscaclienterutBcaResult()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResponse: void setBuscaclienterutBcaResult(cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult)
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult: java.util.List clientes
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult: java.lang.String errorMessage
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult: BuscaclienterutBcaResult()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult: java.util.List getClientes()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult: java.lang.String getErrorMessage()
+cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult: void setErrorMessage(java.lang.String)
+cl.imperial.tipodocumento.ws.ObjectFactory
+cl.imperial.tipodocumento.ws.ObjectFactory: ObjectFactory()
+cl.imperial.tipodocumento.ws.ObjectFactory: cl.imperial.tipodocumento.ws.BuscaclienterutBca createBuscaclienterutBca()
+cl.imperial.tipodocumento.ws.ObjectFactory: cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente createBuscaclienterutBcaCliente()
+cl.imperial.tipodocumento.ws.ObjectFactory: cl.imperial.tipodocumento.ws.BuscaclienterutBcaResponse createBuscaclienterutBcaResponse()
+cl.imperial.tipodocumento.ws.ObjectFactory: cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult createBuscaclienterutBcaResult()
+cl.imperial.tipodocumento.ws.ObjectFactory: cl.imperial.tipodocumento.ws.WebFaultInfo createWebFaultInfo()
+cl.imperial.tipodocumento.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaclienterutBca(cl.imperial.tipodocumento.ws.BuscaclienterutBca)
+cl.imperial.tipodocumento.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaclienterutBcaCliente(cl.imperial.tipodocumento.ws.BuscaclienterutBcaCliente)
+cl.imperial.tipodocumento.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaclienterutBcaResponse(cl.imperial.tipodocumento.ws.BuscaclienterutBcaResponse)
+cl.imperial.tipodocumento.ws.ObjectFactory: javax.xml.bind.JAXBElement createBuscaclienterutBcaResult(cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult)
+cl.imperial.tipodocumento.ws.ObjectFactory: javax.xml.bind.JAXBElement createFaultinfo(cl.imperial.tipodocumento.ws.WebFaultInfo)
+cl.imperial.tipodocumento.ws.ObjectFactory: javax.xml.bind.JAXBElement createWebFaultInfo(cl.imperial.tipodocumento.ws.WebFaultInfo)
+cl.imperial.tipodocumento.ws.ProcedureResult
+cl.imperial.tipodocumento.ws.ProcedureResult: ProcedureResult()
+cl.imperial.tipodocumento.ws.TipoDocumentoWeb
+cl.imperial.tipodocumento.ws.TipoDocumentoWeb: cl.imperial.tipodocumento.ws.BuscaclienterutBcaResult buscaclienterutBca(java.lang.String)
+cl.imperial.tipodocumento.ws.TipoDocumentoWebException
+cl.imperial.tipodocumento.ws.TipoDocumentoWebException: cl.imperial.tipodocumento.ws.WebFaultInfo faultInfo
+cl.imperial.tipodocumento.ws.TipoDocumentoWebException: TipoDocumentoWebException(java.lang.String,cl.imperial.tipodocumento.ws.WebFaultInfo)
+cl.imperial.tipodocumento.ws.TipoDocumentoWebException: TipoDocumentoWebException(java.lang.String,cl.imperial.tipodocumento.ws.WebFaultInfo,java.lang.Throwable)
+cl.imperial.tipodocumento.ws.TipoDocumentoWebException: cl.imperial.tipodocumento.ws.WebFaultInfo getFaultInfo()
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService: TipoDocumentoWebService()
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService: TipoDocumentoWebService(javax.xml.ws.WebServiceFeature[])
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService: TipoDocumentoWebService(java.net.URL)
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService: TipoDocumentoWebService(java.net.URL,javax.xml.ws.WebServiceFeature[])
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService: TipoDocumentoWebService(java.net.URL,javax.xml.namespace.QName)
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService: TipoDocumentoWebService(java.net.URL,javax.xml.namespace.QName,javax.xml.ws.WebServiceFeature[])
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService: cl.imperial.tipodocumento.ws.TipoDocumentoWeb getTipoDocumentoWebPort()
+cl.imperial.tipodocumento.ws.TipoDocumentoWebService: cl.imperial.tipodocumento.ws.TipoDocumentoWeb getTipoDocumentoWebPort(javax.xml.ws.WebServiceFeature[])
+cl.imperial.tipodocumento.ws.WebFaultInfo
+cl.imperial.tipodocumento.ws.WebFaultInfo: java.lang.Integer errorCode
+cl.imperial.tipodocumento.ws.WebFaultInfo: java.lang.String sqlState
+cl.imperial.tipodocumento.ws.WebFaultInfo: java.lang.String subject
+cl.imperial.tipodocumento.ws.WebFaultInfo: WebFaultInfo()
+cl.imperial.tipodocumento.ws.WebFaultInfo: java.lang.Integer getErrorCode()
+cl.imperial.tipodocumento.ws.WebFaultInfo: void setErrorCode(java.lang.Integer)
+cl.imperial.tipodocumento.ws.WebFaultInfo: java.lang.String getSqlState()
+cl.imperial.tipodocumento.ws.WebFaultInfo: void setSqlState(java.lang.String)
+cl.imperial.tipodocumento.ws.WebFaultInfo: java.lang.String getSubject()
+cl.imperial.tipodocumento.ws.WebFaultInfo: void setSubject(java.lang.String)
+cl.imperial.tipodocumento.ws.package-info

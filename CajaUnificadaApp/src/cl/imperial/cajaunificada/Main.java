@@ -12,7 +12,7 @@ package cl.imperial.cajaunificada;
 
 import java.util.Optional;
 import cl.imperial.cajaunificada.utils.CajaUnificadaException;
-//import cl.imperial.tipodocumento.MainTipoDocumento;
+import cl.imperial.tipodocumento.MainTipoDocumento;
 import cl.obcom.desktopfx.core.DesktopTask;
 import cl.obcom.desktopfx.core.ModalEvent;
 import cl.obcom.desktopfx.core.TaskEvent;
@@ -948,12 +948,12 @@ public final class Main extends BorderPane
            if (action != DialogAction.NO)
            {
              //Inicializamos y mostramos Panel Main de Tipo Producto
-//             final MainTipoDocumento Tipodoc = new MainTipoDocumento(task);
-//             task.createTask("tipodocumento",                              //Task plugin
-//                             "cl.imperial.tipodocumento.MainTipoDocumento",    //Task class
-//                             "Selección Tipo Documento",                   //Task title
-//                             Tipodoc,                                      //Task argument
-//                             e -> onTipoDoc(e));                           // Task handler
+             final MainTipoDocumento Tipodoc = new MainTipoDocumento(task);
+             task.createTask("tipodocumento",                              //Task plugin
+                             "cl.imperial.tipodocumento.MainTipoDocumento",    //Task class
+                             "Selección Tipo Documento",                   //Task title
+                             Tipodoc,                                      //Task argument
+                             e -> onTipoDoc(e));                           // Task handler
            }
         if(ValidarValesConORC())
         {

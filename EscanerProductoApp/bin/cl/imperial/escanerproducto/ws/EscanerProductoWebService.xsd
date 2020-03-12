@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?><xs:schema xmlns:tns="http://ws.escanerproducto.imperial.cl/escanerproducto" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://ws.escanerproducto.imperial.cl/escanerproducto">
+
+<xs:element name="faultinfo" nillable="true" type="tns:WebFaultInfo"/>
+
+<xs:element name="grabavaletranstorio" type="tns:grabavaletranstorio"/>
+
+<xs:element name="grabavaletranstorioResponse" type="tns:grabavaletranstorioResponse"/>
+
+<xs:element name="grabavaletranstorioResult" type="tns:GrabavaletranstorioResult"/>
+
+<xs:element name="traelecturascan" type="tns:traelecturascan"/>
+
+<xs:element name="traelecturascanProducto" type="tns:TraelecturascanProducto"/>
+
+<xs:element name="traelecturascanResponse" type="tns:traelecturascanResponse"/>
+
+<xs:element name="traelecturascanResult" type="tns:TraelecturascanResult"/>
+
+<xs:element name="webFaultInfo" type="tns:WebFaultInfo"/>
+
+<xs:complexType name="traelecturascan">
+<xs:sequence>
+<xs:element name="vcodigo" type="xs:string" minOccurs="0"/>
+<xs:element name="vtipo" type="xs:string" minOccurs="0"/>
+<xs:element name="vcodLista" type="xs:string" minOccurs="0"/>
+<xs:element name="vcodEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="vcodEntidad" type="xs:string" minOccurs="0"/>
+<xs:element name="vcodSucursal" type="xs:string" minOccurs="0"/>
+<xs:element name="vtipoDoc" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traelecturascanResponse">
+<xs:sequence>
+<xs:element ref="tns:traelecturascanResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TraelecturascanResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="productos" type="tns:TraelecturascanProducto" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="ProcedureResult" abstract="true">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="TraelecturascanProducto">
+<xs:sequence>
+<xs:element name="cantidad" type="xs:string" minOccurs="0"/>
+<xs:element name="cantidadEmbalaje" type="xs:string" minOccurs="0"/>
+<xs:element name="codProducto" type="xs:string" minOccurs="0"/>
+<xs:element name="codRapido" type="xs:string" minOccurs="0"/>
+<xs:element name="codUnimed" type="xs:string" minOccurs="0"/>
+<xs:element name="code" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="descuento" type="xs:string" minOccurs="0"/>
+<xs:element name="precioBruto" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="WebFaultInfo">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:int" minOccurs="0"/>
+<xs:element name="sqlState" type="xs:string" minOccurs="0"/>
+<xs:element name="subject" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grabavaletranstorio">
+<xs:sequence>
+<xs:element name="vxmlproductos" type="xs:string" minOccurs="0"/>
+<xs:element name="vcodEmp" type="xs:string" minOccurs="0"/>
+<xs:element name="vusuario" type="xs:string" minOccurs="0"/>
+<xs:element name="vtipodoc" type="xs:string" minOccurs="0"/>
+<xs:element name="vcodEntidad" type="xs:string" minOccurs="0"/>
+<xs:element name="vcodSucursal" type="xs:string" minOccurs="0"/>
+<xs:element name="vcodLista" type="xs:string" minOccurs="0"/>
+<xs:element name="vestacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grabavaletranstorioResponse">
+<xs:sequence>
+<xs:element ref="tns:grabavaletranstorioResult" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GrabavaletranstorioResult">
+<xs:complexContent>
+<xs:extension base="tns:ProcedureResult">
+<xs:sequence>
+<xs:element name="errorMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="nroInterno" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+</xs:schema>

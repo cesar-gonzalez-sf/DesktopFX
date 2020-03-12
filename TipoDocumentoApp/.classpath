@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OBCOM DesktopFX"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OBCOM Plugins"/>
+	<classpathentry kind="lib" path="/EscanerProductoWeb/WebContent/jnlp/imperial-escanerproducto-app.jar"/>
+	<classpathentry kind="src" path="/EscanerProductoApp"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

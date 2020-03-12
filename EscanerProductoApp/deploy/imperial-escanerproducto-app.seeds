@@ -1,0 +1,225 @@
+cl.imperial.escanerproducto.CodigoRapidoTemp
+cl.imperial.escanerproducto.CodigoRapidoTemp: CodigoRapidoTemp(cl.imperial.escanerproducto.EscanerMain)
+cl.imperial.escanerproducto.EscanerMain
+cl.imperial.escanerproducto.EscanerMain: EscanerMain(cl.obcom.desktopfx.core.DesktopTask)
+cl.imperial.escanerproducto.EscanerMain: void escanerProducto()
+cl.imperial.escanerproducto.EscanerMain: void IngresaProducto(java.lang.String,java.lang.String)
+cl.imperial.escanerproducto.EscanerTable
+cl.imperial.escanerproducto.EscanerTable: javafx.collections.ObservableList ProductosList
+cl.imperial.escanerproducto.ProductosList
+cl.imperial.escanerproducto.ProductosList: ProductosList()
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty COD_RAPIDOProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getCOD_RAPIDO()
+cl.imperial.escanerproducto.ProductosList: void setCOD_RAPIDO(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty COD_PRODUCTOProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getCOD_PRODUCTO()
+cl.imperial.escanerproducto.ProductosList: void setCOD_PRODUCTO(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty DESCRIPCIONProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getDESCRIPCION()
+cl.imperial.escanerproducto.ProductosList: void setDESCRIPCION(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty PRECIO_BRUTOProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getPRECIO_BRUTO()
+cl.imperial.escanerproducto.ProductosList: void setPRECIO_BRUTO(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty CANTIDAD_EMBALAJEProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getCANTIDAD_EMBALAJE()
+cl.imperial.escanerproducto.ProductosList: void setCANTIDAD_EMBALAJE(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty COD_UNIMEDProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getCOD_UNIMED()
+cl.imperial.escanerproducto.ProductosList: void setCOD_UNIMED(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty CANTIDADProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getCANTIDAD()
+cl.imperial.escanerproducto.ProductosList: void setCANTIDAD(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty TIPOProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getTIPO()
+cl.imperial.escanerproducto.ProductosList: void setTIPO(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty DESCUENTOProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getDESCUENTO()
+cl.imperial.escanerproducto.ProductosList: void setDESCUENTO(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty TOTALProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getTOTAL()
+cl.imperial.escanerproducto.ProductosList: void setTOTAL(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: javafx.beans.property.StringProperty CODEProperty()
+cl.imperial.escanerproducto.ProductosList: java.lang.String getCODE()
+cl.imperial.escanerproducto.ProductosList: void setCODE(java.lang.String)
+cl.imperial.escanerproducto.ProductosList: boolean isEmpty()
+cl.imperial.escanerproducto.ProductosList: java.util.Iterator iterator()
+cl.imperial.escanerproducto.TipoDctoDate
+cl.imperial.escanerproducto.TipoDctoDate: TipoDctoDate()
+cl.imperial.escanerproducto.TipoDctoDate: void clear()
+cl.imperial.escanerproducto.TipoDctoDate: void copyFrom(cl.imperial.escanerproducto.TipoDctoDate)
+cl.imperial.escanerproducto.TipoDctoDate: javafx.beans.property.StringProperty rutProperty()
+cl.imperial.escanerproducto.TipoDctoDate: java.lang.String getRut()
+cl.imperial.escanerproducto.TipoDctoDate: void setrut(java.lang.String)
+cl.imperial.escanerproducto.TipoDctoDate: javafx.beans.property.StringProperty codEntidadProperty()
+cl.imperial.escanerproducto.TipoDctoDate: java.lang.String getCodEntidad()
+cl.imperial.escanerproducto.TipoDctoDate: void setCodEntidad(java.lang.String)
+cl.imperial.escanerproducto.TipoDctoDate: javafx.beans.property.StringProperty codSucursalProperty()
+cl.imperial.escanerproducto.TipoDctoDate: java.lang.String getCodSucursal()
+cl.imperial.escanerproducto.TipoDctoDate: void setCodSucursal(java.lang.String)
+cl.imperial.escanerproducto.TipoDctoDate: javafx.beans.property.StringProperty CreditoProperty()
+cl.imperial.escanerproducto.TipoDctoDate: java.lang.String getCredito()
+cl.imperial.escanerproducto.TipoDctoDate: void setCredito(java.lang.String)
+cl.imperial.escanerproducto.TipoDctoDate: javafx.beans.property.StringProperty lista_precioProperty()
+cl.imperial.escanerproducto.TipoDctoDate: java.lang.String getlista_precio()
+cl.imperial.escanerproducto.TipoDctoDate: void setlista_precio(java.lang.String)
+cl.imperial.escanerproducto.WebService
+cl.imperial.escanerproducto.WebService: void buscaProducto(java.lang.String,java.lang.String,cl.imperial.escanerproducto.EscanerTable,java.lang.String,java.lang.String)
+cl.imperial.escanerproducto.WebService: void IngresarProductos(cl.imperial.escanerproducto.ws.TraelecturascanResult,cl.imperial.escanerproducto.EscanerTable)
+cl.imperial.escanerproducto.WebService: void buscaProductoEliminar(java.lang.String,java.lang.String,cl.imperial.escanerproducto.EscanerTable,java.lang.String,java.lang.String)
+cl.imperial.escanerproducto.WebService: void grabarProducto(cl.imperial.escanerproducto.EscanerTable,java.lang.String,java.lang.String)
+cl.imperial.escanerproducto.ws.EscanerProductoWeb
+cl.imperial.escanerproducto.ws.EscanerProductoWeb: cl.imperial.escanerproducto.ws.TraelecturascanResult traelecturascan(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+cl.imperial.escanerproducto.ws.EscanerProductoWeb: cl.imperial.escanerproducto.ws.GrabavaletranstorioResult grabavaletranstorio(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+cl.imperial.escanerproducto.ws.EscanerProductoWebException
+cl.imperial.escanerproducto.ws.EscanerProductoWebException: cl.imperial.escanerproducto.ws.WebFaultInfo faultInfo
+cl.imperial.escanerproducto.ws.EscanerProductoWebException: EscanerProductoWebException(java.lang.String,cl.imperial.escanerproducto.ws.WebFaultInfo)
+cl.imperial.escanerproducto.ws.EscanerProductoWebException: EscanerProductoWebException(java.lang.String,cl.imperial.escanerproducto.ws.WebFaultInfo,java.lang.Throwable)
+cl.imperial.escanerproducto.ws.EscanerProductoWebException: cl.imperial.escanerproducto.ws.WebFaultInfo getFaultInfo()
+cl.imperial.escanerproducto.ws.EscanerProductoWebService
+cl.imperial.escanerproducto.ws.EscanerProductoWebService: EscanerProductoWebService()
+cl.imperial.escanerproducto.ws.EscanerProductoWebService: EscanerProductoWebService(javax.xml.ws.WebServiceFeature[])
+cl.imperial.escanerproducto.ws.EscanerProductoWebService: EscanerProductoWebService(java.net.URL)
+cl.imperial.escanerproducto.ws.EscanerProductoWebService: EscanerProductoWebService(java.net.URL,javax.xml.ws.WebServiceFeature[])
+cl.imperial.escanerproducto.ws.EscanerProductoWebService: EscanerProductoWebService(java.net.URL,javax.xml.namespace.QName)
+cl.imperial.escanerproducto.ws.EscanerProductoWebService: EscanerProductoWebService(java.net.URL,javax.xml.namespace.QName,javax.xml.ws.WebServiceFeature[])
+cl.imperial.escanerproducto.ws.EscanerProductoWebService: cl.imperial.escanerproducto.ws.EscanerProductoWeb getEscanerProductoWebPort()
+cl.imperial.escanerproducto.ws.EscanerProductoWebService: cl.imperial.escanerproducto.ws.EscanerProductoWeb getEscanerProductoWebPort(javax.xml.ws.WebServiceFeature[])
+cl.imperial.escanerproducto.ws.Grabavaletranstorio
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String vxmlproductos
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String vcodEmp
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String vusuario
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String vtipodoc
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String vcodEntidad
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String vcodSucursal
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String vcodLista
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String vestacion
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: Grabavaletranstorio()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String getVxmlproductos()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: void setVxmlproductos(java.lang.String)
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String getVcodEmp()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: void setVcodEmp(java.lang.String)
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String getVusuario()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: void setVusuario(java.lang.String)
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String getVtipodoc()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: void setVtipodoc(java.lang.String)
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String getVcodEntidad()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: void setVcodEntidad(java.lang.String)
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String getVcodSucursal()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: void setVcodSucursal(java.lang.String)
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String getVcodLista()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: void setVcodLista(java.lang.String)
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: java.lang.String getVestacion()
+cl.imperial.escanerproducto.ws.Grabavaletranstorio: void setVestacion(java.lang.String)
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResponse
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResponse: cl.imperial.escanerproducto.ws.GrabavaletranstorioResult grabavaletranstorioResult
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResponse: GrabavaletranstorioResponse()
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResponse: cl.imperial.escanerproducto.ws.GrabavaletranstorioResult getGrabavaletranstorioResult()
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResponse: void setGrabavaletranstorioResult(cl.imperial.escanerproducto.ws.GrabavaletranstorioResult)
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResult
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResult: java.lang.String errorMessage
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResult: java.lang.Integer nroInterno
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResult: GrabavaletranstorioResult()
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResult: java.lang.String getErrorMessage()
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResult: void setErrorMessage(java.lang.String)
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResult: java.lang.Integer getNroInterno()
+cl.imperial.escanerproducto.ws.GrabavaletranstorioResult: void setNroInterno(java.lang.Integer)
+cl.imperial.escanerproducto.ws.ObjectFactory
+cl.imperial.escanerproducto.ws.ObjectFactory: ObjectFactory()
+cl.imperial.escanerproducto.ws.ObjectFactory: cl.imperial.escanerproducto.ws.WebFaultInfo createWebFaultInfo()
+cl.imperial.escanerproducto.ws.ObjectFactory: cl.imperial.escanerproducto.ws.Grabavaletranstorio createGrabavaletranstorio()
+cl.imperial.escanerproducto.ws.ObjectFactory: cl.imperial.escanerproducto.ws.GrabavaletranstorioResponse createGrabavaletranstorioResponse()
+cl.imperial.escanerproducto.ws.ObjectFactory: cl.imperial.escanerproducto.ws.GrabavaletranstorioResult createGrabavaletranstorioResult()
+cl.imperial.escanerproducto.ws.ObjectFactory: cl.imperial.escanerproducto.ws.Traelecturascan createTraelecturascan()
+cl.imperial.escanerproducto.ws.ObjectFactory: cl.imperial.escanerproducto.ws.TraelecturascanProducto createTraelecturascanProducto()
+cl.imperial.escanerproducto.ws.ObjectFactory: cl.imperial.escanerproducto.ws.TraelecturascanResponse createTraelecturascanResponse()
+cl.imperial.escanerproducto.ws.ObjectFactory: cl.imperial.escanerproducto.ws.TraelecturascanResult createTraelecturascanResult()
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createFaultinfo(cl.imperial.escanerproducto.ws.WebFaultInfo)
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createGrabavaletranstorio(cl.imperial.escanerproducto.ws.Grabavaletranstorio)
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createGrabavaletranstorioResponse(cl.imperial.escanerproducto.ws.GrabavaletranstorioResponse)
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createGrabavaletranstorioResult(cl.imperial.escanerproducto.ws.GrabavaletranstorioResult)
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraelecturascan(cl.imperial.escanerproducto.ws.Traelecturascan)
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraelecturascanProducto(cl.imperial.escanerproducto.ws.TraelecturascanProducto)
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraelecturascanResponse(cl.imperial.escanerproducto.ws.TraelecturascanResponse)
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createTraelecturascanResult(cl.imperial.escanerproducto.ws.TraelecturascanResult)
+cl.imperial.escanerproducto.ws.ObjectFactory: javax.xml.bind.JAXBElement createWebFaultInfo(cl.imperial.escanerproducto.ws.WebFaultInfo)
+cl.imperial.escanerproducto.ws.ProcedureResult
+cl.imperial.escanerproducto.ws.ProcedureResult: ProcedureResult()
+cl.imperial.escanerproducto.ws.Traelecturascan
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String vcodigo
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String vtipo
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String vcodLista
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String vcodEmp
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String vcodEntidad
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String vcodSucursal
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String vtipoDoc
+cl.imperial.escanerproducto.ws.Traelecturascan: Traelecturascan()
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String getVcodigo()
+cl.imperial.escanerproducto.ws.Traelecturascan: void setVcodigo(java.lang.String)
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String getVtipo()
+cl.imperial.escanerproducto.ws.Traelecturascan: void setVtipo(java.lang.String)
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String getVcodLista()
+cl.imperial.escanerproducto.ws.Traelecturascan: void setVcodLista(java.lang.String)
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String getVcodEmp()
+cl.imperial.escanerproducto.ws.Traelecturascan: void setVcodEmp(java.lang.String)
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String getVcodEntidad()
+cl.imperial.escanerproducto.ws.Traelecturascan: void setVcodEntidad(java.lang.String)
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String getVcodSucursal()
+cl.imperial.escanerproducto.ws.Traelecturascan: void setVcodSucursal(java.lang.String)
+cl.imperial.escanerproducto.ws.Traelecturascan: java.lang.String getVtipoDoc()
+cl.imperial.escanerproducto.ws.Traelecturascan: void setVtipoDoc(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String cantidad
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String cantidadEmbalaje
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String codProducto
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String codRapido
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String codUnimed
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String code
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String descripcion
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String descuento
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String precioBruto
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String tipo
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: TraelecturascanProducto()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getCantidad()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setCantidad(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getCantidadEmbalaje()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setCantidadEmbalaje(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getCodProducto()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setCodProducto(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getCodRapido()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setCodRapido(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getCodUnimed()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setCodUnimed(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getCode()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setCode(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getDescripcion()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setDescripcion(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getDescuento()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setDescuento(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getPrecioBruto()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setPrecioBruto(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: java.lang.String getTipo()
+cl.imperial.escanerproducto.ws.TraelecturascanProducto: void setTipo(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanResponse
+cl.imperial.escanerproducto.ws.TraelecturascanResponse: cl.imperial.escanerproducto.ws.TraelecturascanResult traelecturascanResult
+cl.imperial.escanerproducto.ws.TraelecturascanResponse: TraelecturascanResponse()
+cl.imperial.escanerproducto.ws.TraelecturascanResponse: cl.imperial.escanerproducto.ws.TraelecturascanResult getTraelecturascanResult()
+cl.imperial.escanerproducto.ws.TraelecturascanResponse: void setTraelecturascanResult(cl.imperial.escanerproducto.ws.TraelecturascanResult)
+cl.imperial.escanerproducto.ws.TraelecturascanResult
+cl.imperial.escanerproducto.ws.TraelecturascanResult: java.lang.String errorMessage
+cl.imperial.escanerproducto.ws.TraelecturascanResult: java.util.List productos
+cl.imperial.escanerproducto.ws.TraelecturascanResult: TraelecturascanResult()
+cl.imperial.escanerproducto.ws.TraelecturascanResult: java.lang.String getErrorMessage()
+cl.imperial.escanerproducto.ws.TraelecturascanResult: void setErrorMessage(java.lang.String)
+cl.imperial.escanerproducto.ws.TraelecturascanResult: java.util.List getProductos()
+cl.imperial.escanerproducto.ws.WebFaultInfo
+cl.imperial.escanerproducto.ws.WebFaultInfo: java.lang.Integer errorCode
+cl.imperial.escanerproducto.ws.WebFaultInfo: java.lang.String sqlState
+cl.imperial.escanerproducto.ws.WebFaultInfo: java.lang.String subject
+cl.imperial.escanerproducto.ws.WebFaultInfo: WebFaultInfo()
+cl.imperial.escanerproducto.ws.WebFaultInfo: java.lang.Integer getErrorCode()
+cl.imperial.escanerproducto.ws.WebFaultInfo: void setErrorCode(java.lang.Integer)
+cl.imperial.escanerproducto.ws.WebFaultInfo: java.lang.String getSqlState()
+cl.imperial.escanerproducto.ws.WebFaultInfo: void setSqlState(java.lang.String)
+cl.imperial.escanerproducto.ws.WebFaultInfo: java.lang.String getSubject()
+cl.imperial.escanerproducto.ws.WebFaultInfo: void setSubject(java.lang.String)
+cl.imperial.escanerproducto.ws.package-info
