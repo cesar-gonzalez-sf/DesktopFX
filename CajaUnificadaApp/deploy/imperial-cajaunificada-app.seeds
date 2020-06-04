@@ -16,6 +16,9 @@ cl.imperial.cajaunificada.StartupParams: void setSucursal(java.lang.String)
 cl.imperial.cajaunificada.WebClient
 cl.imperial.cajaunificada.WebClient: WebClient(cl.imperial.cajaunificada.Main,cl.obcom.desktopfx.core.DesktopTask,boolean)
 cl.imperial.cajaunificada.WebClient: cl.imperial.cajaunificada.StartupParams startup(cl.obcom.desktopfx.core.DesktopTask)
+cl.imperial.cajaunificada.pagotdc.MainPagoTDC
+cl.imperial.cajaunificada.pagotdc.MainPagoTDC: MainPagoTDC(cl.obcom.desktopfx.core.DesktopTask)
+cl.imperial.cajaunificada.pagotdc.TarjetasTable
 cl.imperial.cajaunificada.utils.CajaUnificadaException
 cl.imperial.cajaunificada.utils.CajaUnificadaException: long serialVersionUID
 cl.imperial.cajaunificada.utils.CajaUnificadaException: CajaUnificadaException()

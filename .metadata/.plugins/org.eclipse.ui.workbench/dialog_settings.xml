@@ -23,9 +23,9 @@
 		</list>
 	</section>
 	<section name="EditorSelectionDialog">
-		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".jnlp"/>
+		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".java"/>
 		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
-		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.ui.DefaultTextEditor"/>
 	</section>
 	<section name="ContentTypeFilenameAssociationDialog">
 		<item key="DIALOG_X_ORIGIN" value="-30"/>

@@ -118,6 +118,54 @@ cl.imperial.cajaunificada.WebClient -> cl.imperial.cajaunificada.WebClient:
     cl.imperial.cajaunificada.ws.CajaUnificadaWeb webPort -> a
     48:66:void <init>(cl.imperial.cajaunificada.Main,cl.obcom.desktopfx.core.DesktopTask,boolean) -> <init>
     84:115:cl.imperial.cajaunificada.StartupParams startup(cl.obcom.desktopfx.core.DesktopTask) -> startup
+cl.imperial.cajaunificada.pagotdc.MainPagoTDC -> cl.imperial.cajaunificada.pagotdc.MainPagoTDC:
+    cl.imperial.cajaunificada.pagotdc.TarjetasTable TarjetasTable -> a
+    javafx.scene.control.Label Tarjetalbl -> a
+    javafx.scene.control.Label Montolbl -> b
+    javafx.scene.control.Label Cuotaslbl -> c
+    javafx.scene.control.Label Numerolbl -> d
+    javafx.scene.control.Label Autorizacionlbl -> e
+    javafx.scene.control.Label RutClientelbl -> f
+    javafx.scene.control.Label TipoPagolbl -> g
+    javafx.scene.control.Label MontoAbonolbl -> h
+    javafx.scene.control.Label CodigoConveniolbl -> i
+    javafx.scene.control.Label Textolbl -> j
+    javafx.scene.control.Label NumeroChequelbl -> k
+    javafx.scene.control.Label N_CuentaCorrientelbl -> l
+    javafx.scene.control.Label Bancolbl -> m
+    javafx.scene.control.Label Sucursallbl -> n
+    javafx.scene.control.Label RutTitularlbl -> o
+    javafx.scene.control.Label ClienteRSTlbl -> p
+    javafx.scene.control.Label TotalTarjetaslbl -> q
+    javafx.scene.control.TextField MontoText -> a
+    javafx.scene.control.TextField CuotasText -> b
+    javafx.scene.control.TextField NumeroText -> c
+    javafx.scene.control.TextField AutorizacionText -> d
+    javafx.scene.control.TextField RutClienteText -> e
+    javafx.scene.control.TextField RutClienteDVText -> f
+    javafx.scene.control.TextField MontoAbonoText -> g
+    javafx.scene.control.TextField CodigoConvenioText -> h
+    javafx.scene.control.TextField NumeroChequeText -> i
+    javafx.scene.control.TextField N_CuenteCorrienteText -> j
+    javafx.scene.control.TextField BancoText -> k
+    javafx.scene.control.TextField sucursalText -> l
+    javafx.scene.control.TextField NumeroPlazaText -> m
+    javafx.scene.control.TextField RutTitularText -> n
+    javafx.scene.control.TextField ClienteRSTText -> o
+    javafx.scene.control.TextField TotalTarjetasText -> p
+    javafx.scene.control.ComboBox TarjetaComboBox -> a
+    javafx.scene.control.ComboBox TipoPagoComboBox -> b
+    javafx.scene.control.Button Command1Btn -> a
+    javafx.scene.control.Button OperarTarjetaBtn -> b
+    javafx.scene.control.Button PuntosBtn -> c
+    javafx.scene.control.Button IniciaDiaBtn -> d
+    javafx.scene.control.Button CierresDiaBtn -> e
+    javafx.scene.control.Button ImprimirVoucherBtn -> f
+    javafx.scene.control.Button AnularBtn -> g
+    javafx.scene.control.Button AceptarBtn -> h
+    38:401:void <init>(cl.obcom.desktopfx.core.DesktopTask) -> <init>
+cl.imperial.cajaunificada.pagotdc.TarjetasTable -> cl.imperial.cajaunificada.pagotdc.TarjetasTable:
+    27:200:void <init>() -> <init>
 cl.imperial.cajaunificada.utils.CajaUnificadaException -> cl.imperial.cajaunificada.utils.CajaUnificadaException:
     long serialVersionUID -> serialVersionUID
     27:28:void <init>() -> <init>
